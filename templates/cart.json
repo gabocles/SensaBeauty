@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "variants_size": false
+      }
+    },
+    "1aa80b55-6f8e-4ae7-b846-f30c027bbdfc": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Add insurance to your order! 🛡️",
+            "text_style": "body"
+          }
+        },
+        "60c08428-bcb6-47db-a00a-fcc4d387e22d": {
+          "type": "text",
+          "settings": {
+            "text": "Each unit covers $100 of order value.",
+            "text_style": "body"
+          }
+        },
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-variant_picker-1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-share-1": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-title-1",
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-text-1",
+        "60c08428-bcb6-47db-a00a-fcc4d387e22d",
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-price-1",
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-variant_picker-1",
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-quantity_selector-1",
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-buy_buttons-1",
+        "template--17775149973806__1aa80b55-6f8e-4ae7-b846-f30c027bbdfc-share-1"
+      ],
+      "settings": {
+        "product": "insurance",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 4,
+        "padding_bottom": 20
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+      }
+    },
+    "457d0374-3728-4dcb-9c30-e39bd34f8c9d": {
+      "type": "benefit",
+      "blocks": {
+        "d8b384e2-edd3-40bf-bc12-fd23c8df5c94": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "97c86b3b-494a-4049-b210-06cdfdd1e2c9": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "d8b384e2-edd3-40bf-bc12-fd23c8df5c94",
+        "97c86b3b-494a-4049-b210-06cdfdd1e2c9"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "da41b8c6-bc04-405e-9233-1a0447d76ad5": {
+      "type": "newsletter",
+      "blocks": {
+        "template--17002266919214__da41b8c6-bc04-405e-9233-1a0447d76ad5-1669353904cb014671-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002266919214__da41b8c6-bc04-405e-9233-1a0447d76ad5-1669353904cb014671-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002266919214__da41b8c6-bc04-405e-9233-1a0447d76ad5-1669353904cb014671-0",
+        "template--17002266919214__da41b8c6-bc04-405e-9233-1a0447d76ad5-1669353904cb014671-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "1aa80b55-6f8e-4ae7-b846-f30c027bbdfc",
+    "cart-footer",
+    "457d0374-3728-4dcb-9c30-e39bd34f8c9d",
+    "da41b8c6-bc04-405e-9233-1a0447d76ad5"
+  ]
+}

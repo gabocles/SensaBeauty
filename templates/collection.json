@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "show_collection_image": true,
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "product_vendor": "",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "sale_price_enable": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "cetegory_menu": "collection-category",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "infinite_scroll": "infinite",
+        "price_enable_title": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8616c547-75d4-4e59-8c99-5860729dba2d": {
+      "type": "benefit",
+      "disabled": true,
+      "blocks": {
+        "b3c2ac86-2218-49e2-a7fa-490650e9ad4e": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "c475e4cf-78c1-4736-9c7e-2670b4a87eee": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "b3c2ac86-2218-49e2-a7fa-490650e9ad4e",
+        "c475e4cf-78c1-4736-9c7e-2670b4a87eee"
+      ],
+      "settings": {
+      }
+    },
+    "55c2376f-8a9e-4338-84ae-e14a85158133": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17002266951982__55c2376f-8a9e-4338-84ae-e14a85158133-166987076482f7587e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002266951982__55c2376f-8a9e-4338-84ae-e14a85158133-166987076482f7587e-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002266951982__55c2376f-8a9e-4338-84ae-e14a85158133-166987076482f7587e-0",
+        "template--17002266951982__55c2376f-8a9e-4338-84ae-e14a85158133-166987076482f7587e-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "8616c547-75d4-4e59-8c99-5860729dba2d",
+    "55c2376f-8a9e-4338-84ae-e14a85158133"
+  ]
+}

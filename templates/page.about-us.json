@@ -1,0 +1,303 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "29e20915-4778-4ed8-ad8e-35283441ab25": {
+      "type": "image-banner",
+      "blocks": {
+        "template--17042431607086__29e20915-4778-4ed8-ad8e-35283441ab25-166910902564e7d64b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "template--17042431607086__29e20915-4778-4ed8-ad8e-35283441ab25-166910902564e7d64b-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17042431607086__29e20915-4778-4ed8-ad8e-35283441ab25-166910902564e7d64b-0",
+        "template--17042431607086__29e20915-4778-4ed8-ad8e-35283441ab25-166910902564e7d64b-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_1_f87fb685-730e-4914-8629-3641b8e62ee7.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_1_43479e4b-4ae5-4804-b004-387d6bbc42edmob.png",
+        "button_link_1": "",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "button_text": "#d8af8d"
+      }
+    },
+    "df88f794-714a-42c2-a685-7d37931c3e63": {
+      "type": "icon-section",
+      "blocks": {
+        "a4d91055-60a5-4ad3-aa70-0ad5c63c0713": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dior.png",
+            "image_url": "shopify:\/\/collections\/christian-dior"
+          }
+        },
+        "becc2698-ff4e-49cc-bbfc-b6c9de813a4c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versace-min_small_2aca8972-ead8-45f6-bcc1-6d9929266fc1.png",
+            "image_url": "shopify:\/\/collections\/versace"
+          }
+        },
+        "33c3134c-5872-47be-bc25-3c96119b8297": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Giorgio-min.png",
+            "image_url": "shopify:\/\/collections\/armani"
+          }
+        },
+        "988e26b2-1412-4723-aa86-058d3289e48e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coach-min.png",
+            "image_url": "shopify:\/\/collections\/coach"
+          }
+        },
+        "3b5417f7-a7c0-460b-b0ba-6d0974c3a2de": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dolce-min.png",
+            "image_url": "shopify:\/\/collections\/doloe-gabbana"
+          }
+        },
+        "a55e1f0f-ae7a-43bc-a3ec-2a3293b3aae6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mont-min.png",
+            "image_url": "shopify:\/\/collections\/montblanc"
+          }
+        },
+        "874bf2d7-454e-4fe4-912a-0708abae48d5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marc-min.png",
+            "image_url": "shopify:\/\/collections\/marc-jacobs"
+          }
+        },
+        "35543736-0758-49bd-b767-67879397aa68": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jimmy-min.png",
+            "image_url": "shopify:\/\/collections\/jimmy-choo"
+          }
+        }
+      },
+      "block_order": [
+        "a4d91055-60a5-4ad3-aa70-0ad5c63c0713",
+        "becc2698-ff4e-49cc-bbfc-b6c9de813a4c",
+        "33c3134c-5872-47be-bc25-3c96119b8297",
+        "988e26b2-1412-4723-aa86-058d3289e48e",
+        "3b5417f7-a7c0-460b-b0ba-6d0974c3a2de",
+        "a55e1f0f-ae7a-43bc-a3ec-2a3293b3aae6",
+        "874bf2d7-454e-4fe4-912a-0708abae48d5",
+        "35543736-0758-49bd-b767-67879397aa68"
+      ],
+      "settings": {
+        "section-background": "rgba(0,0,0,0)"
+      }
+    },
+    "2d461d5c-4dee-4729-9119-ca944c2ad0c8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17042431607086__2d461d5c-4dee-4729-9119-ca944c2ad0c8-16691094469f465646-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Your Fragrance Store<\/p>",
+            "heading_size": "h0"
+          }
+        },
+        "template--17042431607086__2d461d5c-4dee-4729-9119-ca944c2ad0c8-16691094469f465646-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iac<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17042431607086__2d461d5c-4dee-4729-9119-ca944c2ad0c8-16691094469f465646-0",
+        "template--17042431607086__2d461d5c-4dee-4729-9119-ca944c2ad0c8-16691094469f465646-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section-background": "rgba(0,0,0,0)",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "4417edee-302e-40be-8877-fdc19fb8eaad": {
+      "type": "image-with-text",
+      "blocks": {
+        "c2872b3f-d31c-4c2b-bcb4-2019708305e6": {
+          "type": "caption",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sensa_copy_small_0d0a95ee-7a2e-4753-a60b-9a6747eb5931.png",
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--17042431607086__4417edee-302e-40be-8877-fdc19fb8eaad-16691095243c8a7f99-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story",
+            "heading_size": "h0"
+          }
+        },
+        "template--17042431607086__4417edee-302e-40be-8877-fdc19fb8eaad-16691095243c8a7f99-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to SensaBeauty.com – Where Beauty Meets Innovation! <br\/><br\/>In the heart of the bustling beauty world, SensaBeauty.com was born out of a genuine passion and unwavering commitment to bring the zest of beauty right to your doorstep. Our journey started with a simple, yet profound inspiration: to offer a cornucopia of beauty products that not only transcend the ordinary but also come with the promise of competitive pricing.<br\/><br\/>A Shopping Experience Tailored Just for You<br\/><br\/>We understand that your time is precious, and navigating through the vast expanse of beauty products should be nothing short of a breeze. That's why we've crafted a shopping experience that's as easy as a touch of blush, ensuring you find exactly what you need without any fuss. Our user-friendly platform is your beauty playground, where the power of choice is right at your fingertips.<br\/><br\/><\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "c2872b3f-d31c-4c2b-bcb4-2019708305e6",
+        "template--17042431607086__4417edee-302e-40be-8877-fdc19fb8eaad-16691095243c8a7f99-0",
+        "template--17042431607086__4417edee-302e-40be-8877-fdc19fb8eaad-16691095243c8a7f99-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/01_A.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 48
+      }
+    },
+    "75098be9-993a-4ed4-ad40-501daba44415": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17042431607086__75098be9-993a-4ed4-ad40-501daba44415-16691095243c8a7f99-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--17042431607086__75098be9-993a-4ed4-ad40-501daba44415-16691095243c8a7f99-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Expertise You Can Trust<\/strong> <\/p><p>At SensaBeauty.com, we're not just about products; we're about building trust. Our dedicated team of beauty aficionados and industry experts are the heartbeat of our brand, meticulously selecting each product that graces our website. They dive deep into the realms of beauty, ensuring that every item on our virtual shelves meets our high standards of quality, efficacy, and innovation.<\/p><p><strong>A Focus on You, Our Beloved Customer<\/strong> <\/p><p>You are the reason we exist, the muse behind our curation, and the invaluable member of our SensaBeauty family. Your beauty journey is uniquely yours, and we're here to accompany you every step of the way. We listen, we care, and we are committed to enriching your beauty experience with products that not only enhance your outer glow but also nurture your inner confidence.<\/p><p> <strong>Join Us on This Beautiful Journey<\/strong> <\/p><p>So, dive into the SensaBeauty universe and discover a world where beauty knows no bounds. Be it the latest in skincare innovation, the magic of makeup, or the allure of fragrances, we've got you covered. Because at SensaBeauty.com, your beauty, your confidence, and your satisfaction are at the heart of everything we do.<\/p><p>Welcome to the SensaBeauty family – Your beauty journey starts here!<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17042431607086__75098be9-993a-4ed4-ad40-501daba44415-16691095243c8a7f99-0",
+        "template--17042431607086__75098be9-993a-4ed4-ad40-501daba44415-16691095243c8a7f99-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/02_B.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "395ac4d2-4ee5-4daf-a8a0-2198837d10d7": {
+      "type": "benefit",
+      "blocks": {
+        "955b55c9-0e4e-4997-8cc8-5888dbb45ba4": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shippings",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "1b574bf6-ffd1-4bca-8e74-d3c97c0f9c90": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #11",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "955b55c9-0e4e-4997-8cc8-5888dbb45ba4",
+        "1b574bf6-ffd1-4bca-8e74-d3c97c0f9c90"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "c052e826-a1f8-411a-bb06-e3f857efe4c8": {
+      "type": "newsletter",
+      "blocks": {
+        "template--17042431607086__c052e826-a1f8-411a-bb06-e3f857efe4c8-1669110119d821ea6f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17042431607086__c052e826-a1f8-411a-bb06-e3f857efe4c8-1669110119d821ea6f-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17042431607086__c052e826-a1f8-411a-bb06-e3f857efe4c8-1669110119d821ea6f-0",
+        "template--17042431607086__c052e826-a1f8-411a-bb06-e3f857efe4c8-1669110119d821ea6f-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "29e20915-4778-4ed8-ad8e-35283441ab25",
+    "df88f794-714a-42c2-a685-7d37931c3e63",
+    "2d461d5c-4dee-4729-9119-ca944c2ad0c8",
+    "4417edee-302e-40be-8877-fdc19fb8eaad",
+    "75098be9-993a-4ed4-ad40-501daba44415",
+    "395ac4d2-4ee5-4daf-a8a0-2198837d10d7",
+    "c052e826-a1f8-411a-bb06-e3f857efe4c8"
+  ]
+}

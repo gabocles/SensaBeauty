@@ -1,0 +1,25 @@
+<div class="popular-posts">
+  {% if article.image !=blank %}
+    <div class="post-img">
+      <a href="{{ article.url }}">
+      <img src="{{ article.image.src | img_url:'medium' }}" alt="{{ article.title }}">
+      </a>
+    </div>
+  {% endif %} 
+  <div class="post-content">
+    <a href="{{ article.url }}" class="full-unstyled-link">
+    {% if article.title !=blank %}
+      <h3 class="popular-post-title">{{ article.title }}</h3>
+    {% endif %}
+    </a>  
+    {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+      <p class="popular-post-desc">
+        {%- if article.excerpt.size > 0 -%}
+          {{ article.excerpt | strip_html | truncatewords: 6 }}
+        {%- else -%}
+          {{ article.content | strip_html | truncatewords: 30 }}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+  </div>
+</div>

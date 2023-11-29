@@ -1,0 +1,20 @@
+<details class="facets__disclosure-vertical js-filter" open>
+  <summary class="facets__summary caption-large focus-offset">
+    <div>
+      <span>Categories</span>
+    </div>
+  </summary>
+  {% for link in section.settings.cetegory_menu.links %}
+    <div class="parent-display facets__display-vertical">
+      {% if link.title !=blank %}
+        <fieldset class="facets-wrap parent-wrap  facets-wrap-vertical">
+          <ul class="list-unstyled no-js-hidden" role="list">
+            <li class="list-menu__item facets__item{% if link.active %} active{% endif %}">      
+              <a href="{{ link.url }}">{% comment %}{% render 'collection_cetegory_icon' %}{% endcomment %}{{ link.title }}</a>
+            </li>
+          </ul>
+        </fieldset>
+      {% endif %}    
+    </div>
+  {% endfor %}
+</details>

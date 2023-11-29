@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "69262760-26b9-4be7-bd7a-835242dd19b1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17002267312430__69262760-26b9-4be7-bd7a-835242dd19b1-1669288589e8a3b6aa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Get In Touch With Sensa<\/p>",
+            "heading_size": "h0"
+          }
+        },
+        "template--17002267312430__69262760-26b9-4be7-bd7a-835242dd19b1-1669288589e8a3b6aa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fill out the form or email us at support@sensabeauty.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267312430__69262760-26b9-4be7-bd7a-835242dd19b1-1669288589e8a3b6aa-0",
+        "template--17002267312430__69262760-26b9-4be7-bd7a-835242dd19b1-1669288589e8a3b6aa-1"
+      ],
+      "settings": {
+        "section-background": "rgba(0,0,0,0)",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "97c421d7-acc3-43fd-b6ed-3f0a8e54abe8": {
+      "type": "contact-button",
+      "disabled": true,
+      "settings": {
+        "phone_icon": "<svg width=\"21\" height=\"20\" viewbox=\"0 0 21 20\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n            <path d=\"M4.52778 8.66111C6.12778 11.8056 8.7 14.3778 11.85 15.9778L14.2944 13.5278C14.6 13.2222 15.0389 13.1333 15.4222 13.2556C16.6667 13.6667 18.0056 13.8889 19.3889 13.8889C20.0056 13.8889 20.5 14.3833 20.5 15V18.8889C20.5 19.5056 20.0056 20 19.3889 20C8.95556 20 0.5 11.5444 0.5 1.11111C0.5 0.494444 1 0 1.61111 0H5.5C6.11667 0 6.61111 0.494444 6.61111 1.11111C6.61111 2.49444 6.83333 3.83333 7.24444 5.07778C7.36667 5.46111 7.27778 5.9 6.97222 6.20556L4.52778 8.66111Z\" fill=\"black\"><\/path>\n          <\/svg>",
+        "heading": "(305)",
+        "teliphone_link": "tel:2183082513",
+        "email_icon": "<svg width=\"25\" height=\"18\" viewbox=\"0 0 25 18\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n          <path d=\"M20.5 0H4.5C2.3 0 0.5 1.8 0.5 4V14C0.5 16.2 2.3 18 4.5 18H20.5C22.7 18 24.5 16.2 24.5 14V4C24.5 1.8 22.7 0 20.5 0ZM22.1 5.8L14.2 11.1C13.7 11.4 13.1 11.6 12.5 11.6C11.9 11.6 11.3 11.4 10.8 11.1L2.9 5.8C2.5 5.5 2.4 4.9 2.7 4.4C3 4 3.6 3.9 4.1 4.2L12 9.5C12.3 9.7 12.8 9.7 13.1 9.5L21 4.2C21.5 3.9 22.1 4 22.4 4.5C22.6 4.9 22.5 5.5 22.1 5.8Z\" fill=\"black\"><\/path>\n          <\/svg>",
+        "email_title": "support@sensabeauty.com",
+        "email_link": "mailto:support@sensabeauty.com"
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact us",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "phone_nub_enable": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b2988453-f95a-4948-bad7-ba0855a9f1f8": {
+      "type": "benefit",
+      "blocks": {
+        "6ae7db63-82ec-409e-9fe1-602cbb0666d6": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "d1843c56-4753-4d2f-834e-32943e8e07c9": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "6ae7db63-82ec-409e-9fe1-602cbb0666d6",
+        "d1843c56-4753-4d2f-834e-32943e8e07c9"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "f29794a4-ed8c-477f-9873-935e18271cb4": {
+      "type": "newsletter",
+      "blocks": {
+        "template--17002267312430__f29794a4-ed8c-477f-9873-935e18271cb4-166935521334f55151-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h0"
+          }
+        },
+        "template--17002267312430__f29794a4-ed8c-477f-9873-935e18271cb4-166935521334f55151-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267312430__f29794a4-ed8c-477f-9873-935e18271cb4-166935521334f55151-0",
+        "template--17002267312430__f29794a4-ed8c-477f-9873-935e18271cb4-166935521334f55151-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "69262760-26b9-4be7-bd7a-835242dd19b1",
+    "97c421d7-acc3-43fd-b6ed-3f0a8e54abe8",
+    "form",
+    "b2988453-f95a-4948-bad7-ba0855a9f1f8",
+    "f29794a4-ed8c-477f-9873-935e18271cb4"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": false,
+        "show_author": false,
+        "categary_title": "Explore Categories",
+        "category_enable": false,
+        "popular_post": "Popular Posts",
+        "blog": "news",
+        "blog_post_range": 7,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b3fd170f-2f14-4d9a-8e1d-0ab8d8745b62": {
+      "type": "benefit",
+      "disabled": true,
+      "blocks": {
+        "a67c51c2-91cb-43ca-be1a-dafc693019c7": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "content": ""
+          }
+        },
+        "8346dae7-8120-46fa-b205-0dff4cf993c4": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "a67c51c2-91cb-43ca-be1a-dafc693019c7",
+        "8346dae7-8120-46fa-b205-0dff4cf993c4"
+      ],
+      "settings": {
+      }
+    },
+    "7c9b1d1b-eb3d-4cf0-b1c9-d9d1385dcc6e": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17002266886446__7c9b1d1b-eb3d-4cf0-b1c9-d9d1385dcc6e-16698166906e2d302e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002266886446__7c9b1d1b-eb3d-4cf0-b1c9-d9d1385dcc6e-16698166906e2d302e-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002266886446__7c9b1d1b-eb3d-4cf0-b1c9-d9d1385dcc6e-16698166906e2d302e-0",
+        "template--17002266886446__7c9b1d1b-eb3d-4cf0-b1c9-d9d1385dcc6e-16698166906e2d302e-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b3fd170f-2f14-4d9a-8e1d-0ab8d8745b62",
+    "7c9b1d1b-eb3d-4cf0-b1c9-d9d1385dcc6e"
+  ]
+}

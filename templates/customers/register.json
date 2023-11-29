@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ffe3ef21-2665-4078-9d12-ef797b352e33": {
+      "type": "benefit",
+      "disabled": true,
+      "blocks": {
+        "718f17bd-feb2-4ec0-b4c5-39f6039b1410": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "content": ""
+          }
+        },
+        "1e4323ea-45b3-4fa0-be05-27080bea7e01": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "718f17bd-feb2-4ec0-b4c5-39f6039b1410",
+        "1e4323ea-45b3-4fa0-be05-27080bea7e01"
+      ],
+      "settings": {
+      }
+    },
+    "76eae390-6be2-4b61-909e-3d0f04e55b60": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17002267148590__76eae390-6be2-4b61-909e-3d0f04e55b60-166961791289e866fc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002267148590__76eae390-6be2-4b61-909e-3d0f04e55b60-166961791289e866fc-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267148590__76eae390-6be2-4b61-909e-3d0f04e55b60-166961791289e866fc-0",
+        "template--17002267148590__76eae390-6be2-4b61-909e-3d0f04e55b60-166961791289e866fc-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ffe3ef21-2665-4078-9d12-ef797b352e33",
+    "76eae390-6be2-4b61-909e-3d0f04e55b60"
+  ]
+}

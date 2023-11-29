@@ -1,0 +1,8 @@
+.product-recommendations {
+  display: block;
+}
+
+.product-recommendations__heading {
+  margin: 0 0 3rem;
+  text-align:center;
+}

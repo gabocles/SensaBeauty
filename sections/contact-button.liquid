@@ -1,0 +1,72 @@
+<div class="contact-botton">
+  <div class="page-width">
+    <div class="button-box">
+      
+        <a href="{{ section.settings.teliphone_link | default:'#'}}" class="button">
+          {% if section.settings.phone_icon != blank %}
+            <div class="icon">
+              {{ section.settings.phone_icon }}
+            </div>
+          {% endif %}  
+          {% if section.settings.heading != blank %}
+            <span>{{ section.settings.heading }}</span>
+          {% endif %}
+        </a>
+      
+      <a href="{{ section.settings.email_link }}" class="button">
+        {% if section.settings.email_icon != blank %}
+          <div class="icon">
+            {{ section.settings.email_icon }}
+          </div>
+        {% endif %}
+        {% if section.settings.email_title != blank %}
+          <span>{{ section.settings.email_title }}</span>
+        {% endif %}
+      </a>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.contact-button.name",
+    "class": "contact-button",
+    "settings": [
+      {
+        "type": "html",
+        "id": "phone_icon",
+        "label": "t:sections.contact-button.settings.phone_icon.label"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "t:sections.contact-button.settings.heading.label"
+      },
+      {
+        "type": "url",
+        "id": "teliphone_link",
+        "label": "Telephone Link"
+      },
+      {
+        "type": "html",
+        "id": "email_icon",
+        "label": "t:sections.contact-button.settings.email_icon.label"
+      },
+      {
+        "type": "text",
+        "id": "email_title",
+        "label": "t:sections.contact-button.settings.email_title.label"
+      },
+      {
+        "type": "url",
+        "id": "email_link",
+        "label": "Email Link"
+      }
+	],
+    "presets": [
+      {
+        "name": "t:sections.contact-button.presets.name"
+      }
+    ]
+  }
+{% endschema %}

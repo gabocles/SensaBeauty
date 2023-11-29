@@ -1,0 +1,244 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-custom-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "3fa078cf-e138-4fb4-9a97-ddd8a5cf98d4": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#dcae80",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "af1e5b23-ab2d-4331-86d4-2aabf8174c78": {
+          "type": "content",
+          "settings": {
+            "text": "<p>Ships within 1 business day and delivered within 5<\/p>"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "3fa078cf-e138-4fb4-9a97-ddd8a5cf98d4",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "description",
+        "af1e5b23-ab2d-4331-86d4-2aabf8174c78",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "social_icon": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "d598526c-20d9-4cc1-a63e-26e8eec235d6": {
+      "type": "video",
+      "settings": {
+        "heading": "Video Reviews",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Rectangle_153.png",
+        "video_url": "{{ product.metafields.custom.product_video_first.value }}",
+        "cover_image_1": "shopify:\/\/shop_images\/Rectangle_153_ab0d52b9-9a44-4842-9a0c-f3d58eceecd1.png",
+        "video_url_1": "{{ product.metafields.custom.video_second.value }}",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "04a1730f-39bc-4ed8-9197-012fce86530f": {
+      "type": "template-faqs",
+      "blocks": {
+        "template--17106384257326__04a1730f-39bc-4ed8-9197-012fce86530f-166972715376d90ca2-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.key_features_title.value }}",
+            "row_content": "<p>Top Notes something, somethings, <br\/>Middle Notes pineapple, apple, mango, pepper<br\/>Bottom Notes something, somethings, <br\/>Scent Family something, somethings, <br\/>Perfumersomething, somethings,<br\/> Date Launched something, somethings,<\/p>"
+          }
+        },
+        "4b35b203-b626-4d0c-9c05-f7ff95afa44d": {
+          "type": "Product_description",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_title.value }}",
+            "row_content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}<\/p>"
+          }
+        },
+        "f29a4f12-52d3-4e20-a71c-888d079e7e66": {
+          "type": "brand_information",
+          "settings": {
+            "heading": "{{ product.metafields.custom.brand_title.value }}",
+            "row_content": "<p>{{ product.metafields.custom.brand_information | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17106384257326__04a1730f-39bc-4ed8-9197-012fce86530f-166972715376d90ca2-0",
+        "4b35b203-b626-4d0c-9c05-f7ff95afa44d",
+        "f29a4f12-52d3-4e20-a71c-888d079e7e66"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h0",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "1669709160fa9638fd": {
+      "type": "apps",
+      "blocks": {
+        "0e85da4c-c114-4cb0-a381-c8458b417861": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "0e85da4c-c114-4cb0-a381-c8458b417861"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "876e811b-4952-4e10-a79b-1ac6547f7a4e": {
+      "type": "benefit",
+      "disabled": true,
+      "blocks": {
+        "4250d9b6-92aa-453c-bacd-2fc114da0a5b": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "content": ""
+          }
+        },
+        "1f7d66d9-6cb7-428a-b956-0c55de737375": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "4250d9b6-92aa-453c-bacd-2fc114da0a5b",
+        "1f7d66d9-6cb7-428a-b956-0c55de737375"
+      ],
+      "settings": {
+      }
+    },
+    "0b0ae468-e9b1-446f-97c3-1a9435faa71f": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17106384257326__0b0ae468-e9b1-446f-97c3-1a9435faa71f-1669728340a8827e6a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17106384257326__0b0ae468-e9b1-446f-97c3-1a9435faa71f-1669728340a8827e6a-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17106384257326__0b0ae468-e9b1-446f-97c3-1a9435faa71f-1669728340a8827e6a-0",
+        "template--17106384257326__0b0ae468-e9b1-446f-97c3-1a9435faa71f-1669728340a8827e6a-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d598526c-20d9-4cc1-a63e-26e8eec235d6",
+    "04a1730f-39bc-4ed8-9197-012fce86530f",
+    "product-recommendations",
+    "1669709160fa9638fd",
+    "876e811b-4952-4e10-a79b-1ac6547f7a4e",
+    "0b0ae468-e9b1-446f-97c3-1a9435faa71f"
+  ]
+}

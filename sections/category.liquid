@@ -1,0 +1,62 @@
+<div class="category">
+  <div class="page-width">
+    <div class="category-row">
+      {% for block in section.blocks %}
+        <div class="category-item">
+        {% if block.settings.image !=blank %}  
+        <div class="image-box">
+          <a href="{{ block.settings.button_link | default:'#' }}">
+            <img src="{{ block.settings.image | img_url:'small' }}" alt="{{ block.settings.image.alt }}">
+          </a>
+        </div>
+        {% endif %}
+        {% if block.settings.button_title !=blank  %}  
+          <div class="category-title">
+            <a href="{{ block.settings.button_link | default:'#' }}">{{ block.settings.button_title | escape }}</a>
+          </div>
+        {% endif %}  
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.categary.name",
+    "tag": "section",
+    "class": "category-section",
+    "settings": [
+	],
+    "blocks":[
+      {
+      "type": "image",
+      "name": "t:sections.categary.blocks.image.name",
+      "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.categary.blocks.image.settings.image.label"
+          },
+          {
+            "type": "text",
+            "id": "button_title",
+            "label": "t:sections.categary.blocks.image.settings.button_title.label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:sections.categary.blocks.image.settings.button_link.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.categary.presets.name"
+        
+      }
+    ]
+  }
+{% endschema %}

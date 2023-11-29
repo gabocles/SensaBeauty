@@ -1,0 +1,497 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": ""
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cyber_Week_Web.png",
+        "mobile_image": "shopify:\/\/shop_images\/01_mob_Mariia_Mobile.png",
+        "button_link_1": "shopify:\/\/collections\/best-seller-auto",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "button_text": "#ffffff"
+      }
+    },
+    "dbbc0d17-8d5b-4a0d-8c52-b51394f33cba": {
+      "type": "category",
+      "blocks": {
+        "f184f920-b29b-4e9b-9d75-18bf7a2f4543": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Miss_Dior_EDP.png",
+            "button_title": "Fragrance",
+            "button_link": "shopify:\/\/collections\/perfume"
+          }
+        },
+        "3df8c24c-9fb1-47a3-b7bd-a48ff6e8ef9c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Versace_Bright_Crystal_Gel.png",
+            "button_title": "Bath & Body",
+            "button_link": "shopify:\/\/collections\/body-products"
+          }
+        },
+        "77ff47ed-b08a-48ec-b521-1a0e0b376840": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Creed_Aventus_Men_3.4_oz_1.png",
+            "button_title": "Niche Brands",
+            "button_link": "shopify:\/\/collections\/niche-fragrances"
+          }
+        },
+        "89564eb1-6f03-4cb2-b71f-c27230600768": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MJ_Daisy.png",
+            "button_title": "Trending Now",
+            "button_link": "shopify:\/\/collections\/trending-auto"
+          }
+        },
+        "d8511cbb-70d6-4c41-898e-b3d97af3535e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Versace_Crystal_Noir.png",
+            "button_title": "Sale",
+            "button_link": "shopify:\/\/collections\/sale-1"
+          }
+        }
+      },
+      "block_order": [
+        "f184f920-b29b-4e9b-9d75-18bf7a2f4543",
+        "3df8c24c-9fb1-47a3-b7bd-a48ff6e8ef9c",
+        "77ff47ed-b08a-48ec-b521-1a0e0b376840",
+        "89564eb1-6f03-4cb2-b71f-c27230600768",
+        "d8511cbb-70d6-4c41-898e-b3d97af3535e"
+      ],
+      "settings": {
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "collction_link": "shopify:\/\/collections\/best-seller-auto",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-seller-auto",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "sale_price_enable": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "0173eca3-f76f-4ffa-b51e-e1b12e501a2a": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Trending Now",
+        "collction_link": "shopify:\/\/collections\/trending-auto",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "trending-auto",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "sale_price_enable": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5651ecd9-634e-4748-8227-5105e6929bbe": {
+      "type": "image-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC00224_1_Main_Libre_af465ede-57d6-4ef7-8d41-955385ec5b21.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/DSC00224_Mobile_Libre_027a1f7b-1661-4488-9267-952f1db232ca.jpg",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "heading": "",
+        "content": "<p><\/p><p><\/p>",
+        "button_title": "",
+        "button_url": "shopify:\/\/collections\/sensas-top-staff-picks",
+        "text_color": "#000000"
+      }
+    },
+    "f317a7a4-3386-4cfd-8e3e-c0e625341b84": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17002267246894__f317a7a4-3386-4cfd-8e3e-c0e625341b84-1668836214d735fc46-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "best-seller-auto",
+            "image": "shopify:\/\/shop_images\/DSC00543.jpg",
+            "title": "Best sellers",
+            "button_title": "Shop Now",
+            "link": "shopify:\/\/collections\/best-sellers-1"
+          }
+        },
+        "template--17002267246894__f317a7a4-3386-4cfd-8e3e-c0e625341b84-1668836214d735fc46-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "perfumes-all-for-women",
+            "image": "shopify:\/\/shop_images\/DSC09828.jpg",
+            "title": "For Her",
+            "button_title": "Shop Now",
+            "link": "shopify:\/\/collections\/perfumes-all-for-women"
+          }
+        },
+        "template--17002267246894__f317a7a4-3386-4cfd-8e3e-c0e625341b84-1668836214d735fc46-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cologne-all-for-men",
+            "image": "shopify:\/\/shop_images\/DSC00503_ee4ed121-6347-4068-8d40-9eac0a93d47b.jpg",
+            "title": "For Him",
+            "button_title": "Shop Now",
+            "link": "shopify:\/\/collections\/cologne-all-for-men"
+          }
+        },
+        "5db28ab3-1964-448d-839f-ea9c5f5d9602": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "versace",
+            "image": "shopify:\/\/shop_images\/DSC00388.jpg",
+            "title": "Versace",
+            "button_title": "Shop Now",
+            "link": "shopify:\/\/collections\/versace"
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267246894__f317a7a4-3386-4cfd-8e3e-c0e625341b84-1668836214d735fc46-0",
+        "template--17002267246894__f317a7a4-3386-4cfd-8e3e-c0e625341b84-1668836214d735fc46-1",
+        "template--17002267246894__f317a7a4-3386-4cfd-8e3e-c0e625341b84-1668836214d735fc46-2",
+        "5db28ab3-1964-448d-839f-ea9c5f5d9602"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "447540c3-405d-4f1c-a3b4-72bc0ec447ff": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "collction_link": "shopify:\/\/collections\/new-arrivals-1",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals-1",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "sale_price_enable": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02.jpg",
+            "title": "New Arrivals",
+            "text": "",
+            "link_label": "Shop Now",
+            "link": "shopify:\/\/collections\/new-arrivals-1"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.jpg",
+            "title": "Niche Fragrances",
+            "text": "",
+            "link_label": "Shop Now",
+            "link": "shopify:\/\/collections\/niche-fragrances"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03.jpg",
+            "title": "Valentino",
+            "text": "",
+            "link_label": "Shop Now",
+            "link": "shopify:\/\/collections\/valentino"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "collction_link": "shopify:\/\/collections\/gifts",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1f80cd5f-d13b-4bc0-a11f-29a786c0a02a": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Sensa's Staff Selection",
+        "collction_link": "shopify:\/\/collections\/sensas-top-staff-picks",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sensas-top-staff-picks",
+        "products_to_show": 15,
+        "columns_desktop": 4,
+        "full_width": false,
+        "sale_price_enable": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c1828086-b02b-4c65-80d9-2b27fa5ef86b": {
+      "type": "spotlight",
+      "settings": {
+        "heading": "Sensa's Blogs",
+        "blog_link": "shopify:\/\/blogs\/blog",
+        "blog": "blog",
+        "blog_per_row": 4,
+        "content": "",
+        "button_heading": "See All",
+        "link": "shopify:\/\/blogs\/blog"
+      }
+    },
+    "cc6bc589-c12d-40c0-819d-47a77251302a": {
+      "type": "icon-section",
+      "blocks": {
+        "5d6faec7-5996-4555-bd39-ac1240bc572c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dior.png",
+            "image_url": "shopify:\/\/collections\/christian-dior"
+          }
+        },
+        "382236bc-b056-4f9c-b14a-e400852288bc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/versace-min_small_2aca8972-ead8-45f6-bcc1-6d9929266fc1.png",
+            "image_url": "shopify:\/\/collections\/versace"
+          }
+        },
+        "de694fcb-865e-4679-8c7d-5321534d402d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Giorgio-min.png",
+            "image_url": "shopify:\/\/collections\/armani"
+          }
+        },
+        "ef514327-5285-4102-b3b6-b4f0bf04c625": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jimmy-min.png",
+            "image_url": "shopify:\/\/collections\/jimmy-choo"
+          }
+        },
+        "6fe9fa4e-1dad-4dfd-bcf3-c18275f59aa4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dolce-min.png",
+            "image_url": "shopify:\/\/collections\/dolce-gabbana"
+          }
+        },
+        "1f6436dd-19ed-4a2c-89ae-9bdf8c3f5472": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mont-min.png",
+            "image_url": "shopify:\/\/collections\/montblanc"
+          }
+        },
+        "0b47da54-2d84-4b54-a3b9-35460c530c48": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marc-min.png",
+            "image_url": "shopify:\/\/collections\/marc-jacobs"
+          }
+        },
+        "927f51a3-ffbc-4968-a500-d725f0af01ab": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coach-min.png",
+            "image_url": "shopify:\/\/collections\/coach"
+          }
+        }
+      },
+      "block_order": [
+        "5d6faec7-5996-4555-bd39-ac1240bc572c",
+        "382236bc-b056-4f9c-b14a-e400852288bc",
+        "de694fcb-865e-4679-8c7d-5321534d402d",
+        "ef514327-5285-4102-b3b6-b4f0bf04c625",
+        "6fe9fa4e-1dad-4dfd-bcf3-c18275f59aa4",
+        "1f6436dd-19ed-4a2c-89ae-9bdf8c3f5472",
+        "0b47da54-2d84-4b54-a3b9-35460c530c48",
+        "927f51a3-ffbc-4968-a500-d725f0af01ab"
+      ],
+      "settings": {
+        "section-background": "rgba(0,0,0,0)"
+      }
+    },
+    "5bf1380d-0f01-4749-90c3-0917a15c9b4e": {
+      "type": "benefit",
+      "blocks": {
+        "d6dbdd6a-d7ed-4b3c-9edb-0d70d0e1d3ce": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "9139f323-48ea-4d24-baf2-0c192fa2fde7": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "d6dbdd6a-d7ed-4b3c-9edb-0d70d0e1d3ce",
+        "9139f323-48ea-4d24-baf2-0c192fa2fde7"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "19b00e68-1bc8-4c32-9b31-a39159442783": {
+      "type": "newsletter",
+      "blocks": {
+        "template--17002267246894__19b00e68-1bc8-4c32-9b31-a39159442783-16687717769179b840-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002267246894__19b00e68-1bc8-4c32-9b31-a39159442783-16687717769179b840-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267246894__19b00e68-1bc8-4c32-9b31-a39159442783-16687717769179b840-0",
+        "template--17002267246894__19b00e68-1bc8-4c32-9b31-a39159442783-16687717769179b840-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "dbbc0d17-8d5b-4a0d-8c52-b51394f33cba",
+    "featured_collection",
+    "0173eca3-f76f-4ffa-b51e-e1b12e501a2a",
+    "5651ecd9-634e-4748-8227-5105e6929bbe",
+    "f317a7a4-3386-4cfd-8e3e-c0e625341b84",
+    "447540c3-405d-4f1c-a3b4-72bc0ec447ff",
+    "multicolumn",
+    "1f80cd5f-d13b-4bc0-a11f-29a786c0a02a",
+    "c1828086-b02b-4c65-80d9-2b27fa5ef86b",
+    "cc6bc589-c12d-40c0-819d-47a77251302a",
+    "5bf1380d-0f01-4749-90c3-0917a15c9b4e",
+    "19b00e68-1bc8-4c32-9b31-a39159442783"
+  ]
+}

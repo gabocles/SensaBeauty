@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "featured_image",
+        "share",
+        "content"
+      ],
+      "settings": {
+        "reaturn_blog": false,
+        "enable_form_contact": false,
+        "categary_title": "Explore Categories",
+        "category_enable": false,
+        "popular_post": "Popular Posts",
+        "blog": "news",
+        "post_limit": 3
+      }
+    },
+    "cdef981b-0055-443c-b9e4-25eb65954241": {
+      "type": "benefit",
+      "disabled": true,
+      "blocks": {
+        "bdc48ceb-dad6-41b9-a539-7fb85d69c3e4": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "content": ""
+          }
+        },
+        "a6b71d41-382b-4c81-82a7-9c0fb626bb29": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "bdc48ceb-dad6-41b9-a539-7fb85d69c3e4",
+        "a6b71d41-382b-4c81-82a7-9c0fb626bb29"
+      ],
+      "settings": {
+      }
+    },
+    "2566b66b-f9e0-46d2-b9c2-09b93df4e21a": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17002266853678__2566b66b-f9e0-46d2-b9c2-09b93df4e21a-1669816760556d2b37-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002266853678__2566b66b-f9e0-46d2-b9c2-09b93df4e21a-1669816760556d2b37-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002266853678__2566b66b-f9e0-46d2-b9c2-09b93df4e21a-1669816760556d2b37-0",
+        "template--17002266853678__2566b66b-f9e0-46d2-b9c2-09b93df4e21a-1669816760556d2b37-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cdef981b-0055-443c-b9e4-25eb65954241",
+    "2566b66b-f9e0-46d2-b9c2-09b93df4e21a"
+  ]
+}

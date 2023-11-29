@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7e263cb2-e8eb-46a0-baed-87f075aac071": {
+      "type": "benefit",
+      "disabled": true,
+      "blocks": {
+        "337c0690-18e0-4f2a-b111-ef42fc3a3c1e": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "content": ""
+          }
+        },
+        "ea9863cf-90b6-470c-a6f1-594c51f7f711": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "337c0690-18e0-4f2a-b111-ef42fc3a3c1e",
+        "ea9863cf-90b6-470c-a6f1-594c51f7f711"
+      ],
+      "settings": {
+      }
+    },
+    "de7a3f1e-bede-49f7-96ed-af45addf3e1d": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17002267083054__de7a3f1e-bede-49f7-96ed-af45addf3e1d-16696141714f67daa1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002267083054__de7a3f1e-bede-49f7-96ed-af45addf3e1d-16696141714f67daa1-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267083054__de7a3f1e-bede-49f7-96ed-af45addf3e1d-16696141714f67daa1-0",
+        "template--17002267083054__de7a3f1e-bede-49f7-96ed-af45addf3e1d-16696141714f67daa1-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7e263cb2-e8eb-46a0-baed-87f075aac071",
+    "de7a3f1e-bede-49f7-96ed-af45addf3e1d"
+  ]
+}

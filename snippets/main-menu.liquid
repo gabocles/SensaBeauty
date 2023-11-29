@@ -1,0 +1,86 @@
+
+
+<ul class="mega-menu list-menu list-menu--inline">
+  {%- for link in section.settings.menu.links -%}
+    {%- if link.links != blank -%}
+    <li class="link-item mega-dropdown {{ link.title }}">
+      <a href="{{ link.url }}" class="link dropdown-link">{{ link.title }}</a>
+      <div class="dropdown-item">
+        <div class="page-width">
+          <div class="mega-menu-inner">
+            <div class="left-menu">
+              {%- for childlink in link.links -%}
+                <div class="single-menu">
+                  {% if childlink.links !=blank %}
+                    <h5 class="menu-title">{{ childlink.title }}</h5>
+                  {% endif %}  
+                  
+                  <ul class="menu {{ childlink.title }}">
+                   {%- for grandchildlink in childlink.links -%}
+                    {% if grandchildlink.links %} 
+                      <li>
+                        <a href="{{ grandchildlink.url | default:"#" }}">{{ grandchildlink.title }}</a>
+                      </li>
+                    {% endif %}  
+                   {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+
+
+            <div class="right-image">
+             {% for block in section.blocks %}
+                {% if link.title == block.settings.category_type %}
+                  {% for i in (1..2) %}
+                    {% capture img %}image_{{ i }}{% endcapture %}
+                    {% capture title %}heading_{{ i }}{% endcapture %}
+                    {% capture button_link %}button_link_{{ i }}{% endcapture %}
+
+                    {% assign custom_img = block.settings[img] %}
+                    {% assign custom_title = block.settings[title] %}
+                    {% assign custom_url = block.settings[button_link] %}
+
+                      {% if custom_img !=blank  %}
+                        <div class="image-box">
+                          <a href="{{ custom_url | default:'#' }}">
+                            {% if custom_img !=blank  %}  
+                              <img src="{{ custom_img | img_url:'master' }}" alt="{{ custom_title }}">
+                            {% endif %}
+                            {% if custom_title !=blank %}
+                              <span>{{ custom_title }}</span>
+                            {% endif %}
+                          </a>
+                        </div>
+                      {% endif %}  
+                  {% endfor %}
+
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+         {% liquid
+             assign mega_menu = section.blocks | where: "type", "mega_menu"   
+          %}
+          
+          {% for block in mega_menu %}  
+           {% if link.title == block.settings.category_type %}
+  
+          {% if block.settings.button !=blank %}
+             <div class="shop-button"> 
+                <a href="{{ block.settings.shop_now_link | default:'#' }}" class="button">{{ block.settings.button }}</a>
+             </div>
+            {% endif %}
+            {% endif %} 
+            {% endfor %}
+        </div>
+      </div>
+    </li>
+    {% else %}
+    <li class="link-item mega-dropdown {% if link.active %}active{% endif %}">
+      <a href="{{ link.url }}" class="link dropdown-link">{{ link.title }}</a>
+    </li>  
+    {% endif %}  
+  {% endfor %}
+</ul>

@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 20
+      }
+    },
+    "80a26561-610b-46fc-b020-a6cbd4516d67": {
+      "type": "collapsible_content",
+      "blocks": {
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why Choose Sensa Beauty?",
+            "row_content": "<p><strong>Q:<\/strong> What sets Sensa Beauty apart in the world of luxury beauty and fragrances?<\/p><p><strong>A:<\/strong> Sensa Beauty stands as a beacon of excellence and innovation in the luxury beauty sector, providing an extensive selection of high-quality fragrances and beauty products. Our commitment to maintaining competitive pricing ensures that indulgence is accessible, allowing you to experience the epitome of beauty and elegance without compromise.<\/p><p><strong>Our Expert Team:<\/strong><br\/>We take immense pride in our dedicated team of beauty connoisseurs, each possessing a wealth of knowledge and a keen nose for fragrances. They are at your disposal to guide you through our exquisite range, ensuring you find the perfect scent that resonates with your personality and style.<\/p><p><strong>An Unparalleled User Experience:<\/strong><br\/>Our website is designed with you in mind, ensuring a seamless and enjoyable shopping experience from start to finish. Navigation is intuitive, and our products are presented with clarity, accompanied by detailed descriptions and expert recommendations.<\/p><p><strong>Swift and Secure Delivery:<\/strong><br\/>In our commitment to excellence, we ensure that your cherished selections are delivered to your doorstep promptly and securely. We understand the excitement that comes with a new purchase, and we strive to expedite the process, ensuring your products arrive in perfect condition and without delay.<\/p><p><strong>Customer Service That Cares:<\/strong><br\/>At Sensa Beauty, our relationship with you extends beyond the transaction. Our customer service team is synonymous with professionalism and empathy, ready to assist with any inquiries or concerns. We are steadfast in our commitment to ensuring your satisfaction and fostering a shopping experience that is as luxurious as the products we offer.<\/p><p><strong>Innovation and Evolution:<\/strong><br\/>Our finger is constantly on the pulse of beauty trends and innovations, ensuring our product range is always fresh, relevant, and ahead of the curve. We continuously evolve to meet and exceed the expectations of our discerning clientele, cementing our reputation as a trusted and trendsetting beauty brand.<\/p><p>In choosing Sensa Beauty, you are choosing a brand that values quality, innovation, and customer satisfaction above all else. We invite you to immerse yourself in the Sensa Beauty experience, where luxury is accessible and your satisfaction is our ultimate pursuit.<\/p>"
+          }
+        },
+        "d81d4c5f-2090-4d01-a9b0-3d82d2a0caaf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Estimated Delivery Times for Orders",
+            "row_content": "<p><strong>Q: What is the estimated delivery time for my order?<\/strong><\/p><p><strong>A:<\/strong> Upon receipt of your order, we ensure its dispatch from our facility within one business day. In instances where orders are placed during the weekend, we strive to ship within two business days. The subsequent delivery duration varies based on your geographical proximity to our central warehouse located in Miami, FL, typically ranging from 2 to 6 business days.<\/p><p>Should you require a more expedited shipping process, we offer a premium delivery service at an additional charge of $9.95, ensuring your package arrives within 3 business days from the date of order placement.<\/p>"
+          }
+        },
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping Services",
+            "row_content": "<h4><strong>Q: <\/strong>Which shipping carriers do you use?<\/h4><p><strong>A:<\/strong> We partner with trusted carriers UPS and USPS to deliver your orders efficiently and securely. Our team selects the most suitable shipping service for each order, taking into consideration factors like your location, the urgency of delivery, and cost-effectiveness. Our goal is to balance operational efficiency with affordability to provide you with the best possible shipping experience.<\/p><h4><strong>Q:<\/strong> Can I request a specific shipping carrier for my order?<\/h4><p><strong>A:<\/strong> Absolutely! If you have a preference for a particular carrier, please mention this in the address details section when placing your order and drop us a message. We’ll do our best to accommodate your request and ensure your order is shipped according to your preference.<\/p>"
+          }
+        },
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Returns and Refund Policy",
+            "row_content": "<p><strong>Returns and Refund Policy<\/strong><br\/><br\/>At Sensa Beauty, we prioritize our commitment to customer satisfaction and ensure a seamless experience when shopping with us. Our Returns and Refund Policy is designed to assist our valued customers in the event that they need to return a product. As a fragrance company, it is imperative that all returns adhere to our specific guidelines to ensure the integrity of our products. Please find below the detailed policy:<br\/><br\/><strong>Eligibility for Returns and Refunds<\/strong><br\/><br\/>Products are eligible for a full refund provided they are unopened and in their original condition. To facilitate your return, we offer a <a href=\"https:\/\/track.shipstation.com\/f\/r\/k\/nRBGFXQHFrkCM2O%2FbevOcf1ewUCCF3i%2B9CIWXdknJ90%3D\" title=\"Sensa Returns Portal\">returns portal <\/a> where you can generate a shipping label for your return. Please note that the cost of shipping will be deducted from your refund amount.<\/p><p>The processing time for refunds may take up to 10 business days from the date of receipt of the returned product.<\/p><p>Requirements for Returns<br\/>To facilitate a smooth return process, please ensure you provide the following information:<br\/><br\/>Order Number<br\/>Email Address<br\/>Packing Slip<br\/>Reason for Returning the Product<br\/>If the product received is damaged, we require photographic evidence of the product’s condition to validate and process a full refund.<br\/><br\/><strong>Return Shipping Address<\/strong><br\/>All returns should be shipped to:<br\/>1845 NE 146th St. N Miami, FL 33181, USA<br\/><br\/><strong>Contact Information for Returns<\/strong><br\/>For any issues related to returns, please reach out to us via email at support@sensabeauty.com.<br\/><br\/><strong>Order Cancellations<\/strong><br\/>We strive to accommodate order cancellations when requested in a timely manner. However, please note that if the order has already been dispatched and is out for delivery, we are unable to cancel the order.<br\/><br\/>Sensa Beauty is dedicated to providing exceptional customer service and ensuring that our customers’ needs are met with care and attention. We appreciate your understanding of our Returns and Refund Policy, and we are here to assist you with any inquiries or concerns you may have.<\/p>"
+          }
+        },
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Order Tracking",
+            "row_content": "<p>We understand the importance of staying informed about the status of your order, and we are committed to providing timely and accurate updates throughout the entire process. Below, you will find comprehensive information on how to track and manage your order.<br\/><br\/><strong>Q. How can I monitor the progress of my order?<\/strong><\/p><p><br\/><strong>A. <\/strong>Upon placing your order, you will receive regular updates regarding its status through both email and text messaging. These updates will be sent to the contact information provided during the checkout process. You will be duly notified as your order progresses through the various stages, including processing, shipping, and delivery.<br\/><br\/><strong>Q.<\/strong> <strong>What should I do if I receive a delivery notification, but my package is not here?<\/strong><\/p><p><br\/><strong>A.<\/strong> In the event that you have been notified of your package's delivery but are unable to locate it, we recommend the following steps:<br\/><br\/><strong>Step 1:<\/strong><br\/>Verify the tracking details on the carrier's official website. If the status indicates that the package has been delivered, please proceed to Step 2.<br\/><br\/><strong>Step 2:<\/strong><br\/>Explore alternative delivery locations, which may include:<br\/><br\/>Parcel lockers<br\/>Other household members<br\/>Side doors or garage areas<br\/>Bushes or hidden spots near the entrance<br\/>Building doorman or security desk<br\/>Neighbors or adjacent addresses<br\/>Office receiving department or secretarial staff<br\/>If, after conducting a thorough search, you are still unable to locate your package, we kindly ask that you contact our customer support team with the following details:<br\/><br\/>Your order number<br\/>The delivery address<br\/>Confirmation that the order has not been found<br\/>Your desired resolution or outcome<\/p><p><strong>Q. What should I do if I am not receiving updates on my order?<\/strong><\/p><p><strong>A.<\/strong> If you notice that you have not been receiving timely updates regarding your order, please do not hesitate to reach out to us directly via email at Support@sensabeauty.com. Our customer support team will swiftly address the issue to ensure that you are kept fully informed about the status of your order.<br\/><br\/>We value your trust and are here to assist you every step of the way. If you have any additional questions or concerns, please feel free to contact us. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-0",
+        "d81d4c5f-2090-4d01-a9b0-3d82d2a0caaf",
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-1",
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-2",
+        "template--17042464342318__80a26561-610b-46fc-b020-a6cbd4516d67-16693772450e6ef69a-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shipping & Returns Questions",
+        "heading_size": "h0",
+        "heading_alignment": "left",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "e1666657-33e8-4ce5-980d-691e3bf5615f": {
+      "type": "collapsible_content",
+      "blocks": {
+        "template--17042464342318__e1666657-33e8-4ce5-980d-691e3bf5615f-1669377261e69d52af-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Fragrance Types Explained",
+            "row_content": "<p><strong>Q1: What is Eau de Parfum (EDP)?<\/strong><\/p><p>A1: EDP has 15-20% perfume oil, offering a rich scent lasting 5-8 hours. It’s great for evenings and special events.<\/p><p><strong>Q2: How does Eau de Toilette (EDT) differ from EDP?<\/strong><\/p><p>A2: EDT has 5-15% perfume oil, resulting in a lighter scent that lasts 3-5 hours, perfect for daily wear.<\/p><p><strong>Q3: What is Eau de Cologne (EDC)?<\/strong><\/p><p>A3: EDC contains 2-4% perfume oil, providing a refreshing scent for 2-3 hours. It’s commonly found in aftershaves.<\/p><p><strong>Q4: How is Parfum different from EDP, EDT, and EDC?<\/strong><\/p><p>A4: Parfum has the highest perfume oil concentration (20-30%+), offering a rich scent that can last up to 24 hours.<\/p><p><strong>Q5: How to choose the right fragrance concentration?<\/strong><\/p><p>A5: Your choice depends on personal preference, occasion, and budget. Use Parfum or EDP for a lasting scent, and EDT or EDC for a lighter touch.<\/p>"
+          }
+        },
+        "template--17042464342318__e1666657-33e8-4ce5-980d-691e3bf5615f-1669377261e69d52af-3": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17042464342318__e1666657-33e8-4ce5-980d-691e3bf5615f-1669377261e69d52af-0",
+        "template--17042464342318__e1666657-33e8-4ce5-980d-691e3bf5615f-1669377261e69d52af-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Product Related Questions",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "c812119d-91f9-4596-8b2d-ddf93ae821f8": {
+      "type": "collapsible_content",
+      "blocks": {
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Payment Options",
+            "row_content": "<p>We accept all major credit cards as well as apple pay and shop pay.  <\/p>"
+          }
+        },
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-1": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.<\/p>"
+          }
+        },
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-2": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.<\/p>"
+          }
+        },
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-3": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "row_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-0",
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-1",
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-2",
+        "template--17042464342318__c812119d-91f9-4596-8b2d-ddf93ae821f8-1669377261e69d52af-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Common Questions",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "e12d4e8e-0e05-400c-8af8-4a6c54cafc32": {
+      "type": "benefit",
+      "blocks": {
+        "65a71b58-8119-4151-8e9e-569bc1f415e5": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "705fdc00-d034-47f2-a412-7c252fe63475": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "65a71b58-8119-4151-8e9e-569bc1f415e5",
+        "705fdc00-d034-47f2-a412-7c252fe63475"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "17b724a2-4fc8-4be8-a706-35201ffe090d": {
+      "type": "newsletter",
+      "blocks": {
+        "template--17042464342318__17b724a2-4fc8-4be8-a706-35201ffe090d-16691908408c15f55f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17042464342318__17b724a2-4fc8-4be8-a706-35201ffe090d-16691908408c15f55f-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17042464342318__17b724a2-4fc8-4be8-a706-35201ffe090d-16691908408c15f55f-0",
+        "template--17042464342318__17b724a2-4fc8-4be8-a706-35201ffe090d-16691908408c15f55f-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "80a26561-610b-46fc-b020-a6cbd4516d67",
+    "e1666657-33e8-4ce5-980d-691e3bf5615f",
+    "c812119d-91f9-4596-8b2d-ddf93ae821f8",
+    "e12d4e8e-0e05-400c-8af8-4a6c54cafc32",
+    "17b724a2-4fc8-4be8-a706-35201ffe090d"
+  ]
+}

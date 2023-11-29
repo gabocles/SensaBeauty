@@ -1,0 +1,17 @@
+<summary class="facets__summary">
+  <div><span>Categories</span></div>
+</summary>
+{% for link in section.settings.cetegory_menu.links %}
+  <div class="custom_parent-display">
+    {% if link.title !=blank %}
+      <fieldset class="custom_menu_open">
+        <ul class="menu_list" role="list">
+          <li class="custom_list-menu__item">
+            {% render 'collection_cetegory_icon' %}          
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        </ul>
+      </fieldset>
+    {% endif %}    
+  </div>
+{% endfor %}

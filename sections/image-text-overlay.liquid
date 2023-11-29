@@ -1,0 +1,158 @@
+<div class="image-text-overlay">
+  <div class="page-width">
+    <div class="image-content">
+      <a href="{{ section.settings.button_url | default:'#' }}" class="background-link"></a>
+      
+      {% if section.settings.image !=blank %}
+        <img src="{{ section.settings.image | img_url:'master' }}" alt="{{ section.settings.heading }}" class="desktop-image">
+      {% endif %}  
+      
+      {% if section.settings.mobile_image !=blank %}
+        <img src="{{ section.settings.mobile_image | img_url:'master' }}" alt="{{ section.settings.heading }}" class="mobile-image">
+      {% endif %}  
+      <div class="content banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }}">
+        {% if section.settings.heading != blank %}
+          <h2 class="title">{{ section.settings.heading }}</h2> 
+        {% endif %}
+        {% if section.settings.content == blank  %}
+          <div class="description">{{ section.settings.content }}</div>  
+        {% endif %}
+
+        {% comment %}
+        <div class="quanity_button">
+          <button type="submit" class="button button-primary" id="custom_product_id" quantity="1" product_id="{{ custom_product.first_available_variant.id }}" >Add to Cart</button>
+        </div>
+        {% endcomment %}
+        <div class="quanity_button">
+          {% if section.settings.button_title !=blank %}
+            <a href="{{ section.settings.button_url | default:'#' }}" class="button button-primary">
+              {{ section.settings.button_title }}
+            </a>
+          {% endif %}  
+        </div> 
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<style>
+  .content.banner--content-align-right {
+    text-align: right;
+  }
+  .content.banner--content-align-left {
+    text-align: left;
+  }
+  .content.banner--content-align-center {
+    text-align: center;
+  }
+  .image-text-overlay .image-content .content .title{
+    color: {{section.settings.text_color }};
+  }
+  .image-text-overlay .image-content .content .description{
+    color: {{section.settings.text_color }};
+  }
+  @media only screen and (max-width: 767px) {
+    .content.banner--content-align-mobile-right {
+      text-align: right;
+    }
+    .content.banner--content-align-mobile-left {
+      text-align: left;
+    }
+    .content.banner--content-align-mobile-center {
+      text-align: center;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "t:sections.image-text-overlay.name",
+    "settings": [
+       {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-text-overlay.settings.image.label"
+       },
+       {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "t:sections.image-text-overlay.settings.mobile_image.label"
+       },
+       {
+        "type": "select",
+        "id": "desktop_content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+       },
+       {
+          "type": "select",
+          "id": "mobile_content_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.image-banner.settings.mobile_content_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.image-banner.settings.mobile_content_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.image-banner.settings.mobile_content_alignment.options__3.label"
+            }
+          ],
+          "default": "center",
+          "label": "t:sections.image-banner.settings.mobile_content_alignment.label"
+        },
+       {
+        "type": "text",
+        "id": "heading",
+        "label": "t:sections.image-text-overlay.settings.heading.label"
+       },  
+       {
+        "type": "richtext",
+        "id": "content",
+        "label": "t:sections.image-text-overlay.settings.content.label"
+       },
+       {
+        "type": "text",
+        "id": "button_title",
+        "label": "t:sections.image-text-overlay.settings.button_title.label"
+       },  
+       {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:sections.image-text-overlay.settings.button_url.label"
+       },
+       {
+        "type": "color",
+        "id": "text_color",
+        "label": "Heading Color",
+        "default": "#000000"
+       }       
+	],
+    "blocks":[
+      
+    ],
+    "presets": [
+      {
+        "name": "t:sections.image-text-overlay.presets.name"
+      }
+    ]
+  }
+{% endschema %}

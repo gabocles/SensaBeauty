@@ -1,0 +1,248 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "link": "{{ product.metafields.custom.collection_link.value }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "21da6f8f-f071-4040-9996-6e1be0c2a343": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#dcae80",
+            "star_size": 17,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "sale_price_enable": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "a4374ea4-5d18-4b51-ac9e-9f165451ef42": {
+          "type": "content",
+          "settings": {
+            "text": "<p>Ships within 1 business day and delivered within 5<\/p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "21da6f8f-f071-4040-9996-6e1be0c2a343",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "a4374ea4-5d18-4b51-ac9e-9f165451ef42",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "social_icon": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "e1df3790-3cca-460f-b273-029f1679c457": {
+      "type": "video",
+      "settings": {
+        "heading": "Video Reviews",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Rectangle_153.png",
+        "video_url": "{{ product.metafields.custom.product_video_first.value }}",
+        "cover_image_1": "shopify:\/\/shop_images\/Rectangle_153_ab0d52b9-9a44-4842-9a0c-f3d58eceecd1.png",
+        "video_url_1": "{{ product.metafields.custom.video_second.value }}",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7b991e35-e698-4b43-9523-ddd0f45b3ba5": {
+      "type": "template-faqs",
+      "blocks": {
+        "template--17775150661934__7b991e35-e698-4b43-9523-ddd0f45b3ba5-16790337515ecb34b3-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ product.metafields.custom.key_features_title.value }}",
+            "row_content": "<p>{{ product.metafields.custom.key_features_content | metafield_tag }}<\/p>"
+          }
+        },
+        "75ac310a-3d55-4984-ab08-982d1d0f6738": {
+          "type": "Product_description",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_title.value }}",
+            "row_content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}<\/p>"
+          }
+        },
+        "9ba9dff0-c90b-4ad4-b6de-9c7b5d965d61": {
+          "type": "brand_information",
+          "settings": {
+            "heading": "{{ product.metafields.custom.brand_title.value }}",
+            "row_content": "<p>{{ product.metafields.custom.brand_information | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17775150661934__7b991e35-e698-4b43-9523-ddd0f45b3ba5-16790337515ecb34b3-0",
+        "75ac310a-3d55-4984-ab08-982d1d0f6738",
+        "9ba9dff0-c90b-4ad4-b6de-9c7b5d965d61"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h0",
+        "products_to_show": 7,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "16697038034821431d": {
+      "type": "apps",
+      "blocks": {
+        "8718b17c-0b06-4807-9df2-e8c2c538b473": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "8718b17c-0b06-4807-9df2-e8c2c538b473"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "05abb994-f3f5-4f08-bb06-a222c83acd1b": {
+      "type": "benefit",
+      "blocks": {
+        "f20b94c1-fca3-4413-a9cd-b09a834711e1": {
+          "type": "content",
+          "settings": {
+            "heading": "Free Shipping",
+            "text_link": "",
+            "content": ""
+          }
+        },
+        "120d8ab0-79a1-4259-b1cf-5ca06c191d39": {
+          "type": "content",
+          "settings": {
+            "heading": "Benefit #2",
+            "text_link": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "f20b94c1-fca3-4413-a9cd-b09a834711e1",
+        "120d8ab0-79a1-4259-b1cf-5ca06c191d39"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "7b8e45fe-55c5-4626-affa-72d6b43777fd": {
+      "type": "newsletter",
+      "blocks": {
+        "template--17002267410734__7b8e45fe-55c5-4626-affa-72d6b43777fd-1669728456e24b19b2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get the Latest Sensa Information",
+            "heading_size": "h1"
+          }
+        },
+        "template--17002267410734__7b8e45fe-55c5-4626-affa-72d6b43777fd-1669728456e24b19b2-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17002267410734__7b8e45fe-55c5-4626-affa-72d6b43777fd-1669728456e24b19b2-0",
+        "template--17002267410734__7b8e45fe-55c5-4626-affa-72d6b43777fd-1669728456e24b19b2-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e1df3790-3cca-460f-b273-029f1679c457",
+    "7b991e35-e698-4b43-9523-ddd0f45b3ba5",
+    "product-recommendations",
+    "16697038034821431d",
+    "05abb994-f3f5-4f08-bb06-a222c83acd1b",
+    "7b8e45fe-55c5-4626-affa-72d6b43777fd"
+  ]
+}

@@ -1,0 +1,68 @@
+<div class="icon-section">
+  <div class="page-width">
+    
+      
+      <div class="icons" style="background-color: {{ section.settings.section-background }};">
+        {% for block in section.blocks %}
+        <div class="custom_image">
+        <a href="{{ block.settings.image_url | default:'#' }}">  
+          {% if block.settings.image !=blank %}  
+            <img src="{{ block.settings.image | img_url:'lagre' }}" alt="{{ block.settings.image.alt }}">
+          {% endif %}
+        </a>  
+
+          
+          
+        {% comment %}
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_2.png?v=1669006000" alt="icon">
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_3.png?v=1669006000" alt="icon">
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_4.png?v=1669006000" alt="icon">
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_5.png?v=1669006000" alt="icon">
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_6.png?v=1669006000" alt="icon">
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_7.png?v=1669006000" alt="icon">
+        <img src="https://cdn.shopify.com/s/files/1/0679/4166/3022/files/image_8.png?v=1669006000" alt="icon">
+        {% endcomment %}
+        </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.icon.name",
+    "settings": [
+      {
+      "type": "color",
+      "id": "section-background",
+      "label": "Section Background",
+      "default": "transparent"
+     }      
+	],
+    "blocks":[
+      {
+        "type": "image",
+        "name": "t:sections.icon.blocks.image.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.icon.blocks.image.settings.image.label"
+          },
+          {
+            "type": "url",
+            "id": "image_url",
+            "label": "t:sections.icon.blocks.image.settings.image_url.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.icon.presets.name"
+        
+      }
+    ]
+  }
+{% endschema %}
