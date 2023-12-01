@@ -32,9 +32,8 @@
     endif
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
-    <div class="card card--{{ settings.card_style }}{% if card_product.featured_media %} card--media{% else %} card--text{% endif %}{% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-        {% if extend_height %} card--extend-height{% endif %}{% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}{% if horizontal_class %} card--horizontal{% endif %}"
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+    <div class="card card--{{ settings.card_style }}{% if card_product.featured_media %} card--media{% else %} card--text{% endif %}{% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %} {% if extend_height %} card--extend-height{% endif %}{% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}{% if horizontal_class %} card--horizontal{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+
       <div
         class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -103,7 +102,7 @@
             </h3>
            {% endif %}   
           </div>
-          {% comment %}
+
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
@@ -117,11 +116,12 @@
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
               >
-                {{- 'products.product.on_sale' | t -}}
+                {{ card_product.compare_at_price | minus: card_product.price | times: 100 | divided_by: card_product.compare_at_price }}% OFF
               </span>
             {%- endif -%}
           </div>
-         {% endcomment %} 
+          {% # END .card__badge %}
+
         </div>
       </div>
      
@@ -190,11 +190,9 @@
                     {{ card_product.title }}
                 </a>
             </h3>
-   
   
             {% render 'price', product: card_product, price_class: '' %}
 
-             
             <div class="tag" data-tag="{{ unisex }}">
              {% assign product_tag = card_product.metafields.custom.gender %} 
                <a href="{{ card_product.url }}">
@@ -306,9 +304,20 @@
             </span>
           {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
             <span id="Badge-{{ section_id }}-{{ card_product.id }}" class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">
-              {{- 'products.product.on_sale' | t -}}
+              {{ card_product.compare_at_price | minus: card_product.price | times: 100 | divided_by: card_product.compare_at_price }}% OFF
             </span>
           {%- endif -%}
+
+            {% comment %} ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {% endcomment %}
+            <span id="Badge-{{ section_id }}-{{ card_product.id }}" class="badge">
+              {% assign count = 0 %}
+              {% for product in collections.all.products %}
+                  {% if product.available == false %} 
+                    {% assign count = count | plus: 1 %}
+                  {% endif %}
+              {% endfor %}
+              {{ count }}
+            </span>
         </div>
        {% endif %}   
       </div>

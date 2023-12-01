@@ -371,23 +371,6 @@
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
-              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                <div class="product__tax caption rte">
-                  {%- if shop.taxes_included -%}
-                    {{ 'products.product.include_taxes' | t }}
-                  {%- endif -%}
-                  {%- if shop.shipping_policy.body != blank -%}
-                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
-              <div {{ block.shopify_attributes }}>
-                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  {{ form | payment_terms }}
-                {%- endform -%}
-              </div>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden">
@@ -530,7 +513,7 @@
                 
             </div>
             {% when 'content' %}
-             {% if block.settings.text !=blank %} 
+             {% if block.settings.text != blank %} 
              <div class="content">
                {{ block.settings.text }}
              </div>
@@ -560,15 +543,34 @@
                           >
                           {% assign variant_available = true %}
                           {% if product.options.size >= 1 %}
-                            {% unless product.variants[forloop.index0].available  %}
+                            {% unless product.variants[forloop.index0].available %}
                               {% assign variant_available = false %}
                             {% endunless %}
                           {% endif %}
                           
                           <label class="{% unless variant_available %}soldout{% endunless %}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-slide="{{ forloop.index0 | plus: 1 }}">
-                            <a href="javascript:void(0)">
-                            {{ value }}
-                            </a>
+                            
+                            <img
+                              id="Thumbnail-{{ section.id }}-0"
+                              srcset="
+                                {% if featured_media.preview_image.width >= 54 %}{{ featured_media.preview_image | image_url: width: 54 }} 54w,{% endif %}
+                                {% if featured_media.preview_image.width >= 74 %}{{ featured_media.preview_image | image_url: width: 74 }} 74w,{% endif %}
+                                {% if featured_media.preview_image.width >= 104 %}{{ featured_media.preview_image | image_url: width: 104 }} 104w,{% endif %}
+                                {% if featured_media.preview_image.width >= 162 %}{{ featured_media.preview_image | image_url: width: 162 }} 162w,{% endif %}
+                                {% if featured_media.preview_image.width >= 208 %}{{ featured_media.preview_image | image_url: width: 208 }} 208w,{% endif %}
+                                {% if featured_media.preview_image.width >= 324 %}{{ featured_media.preview_image | image_url: width: 324 }} 324w,{% endif %}
+                                {% if featured_media.preview_image.width >= 416 %}{{ featured_media.preview_image | image_url: width: 416 }} 416w,{% endif %},
+                                {{ featured_media.preview_image | image_url }} {{ media.preview_image.width }}w
+                              "
+                              src="{{ featured_media | image_url: width: 38 }}"
+                              sizes="(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4), (min-width: 990px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4), (min-width: 750px) calc((100vw - 15rem) / 8), calc((100vw - 14rem) / 3)"
+                              alt="{{ featured_media.alt | escape }}"
+                              height="38"
+                              width="38"
+                              loading="lazy"
+                            >
+
+                            <a href="javascript:void(0)" class="variant-text-link">{{ value | strip }}</a>
                           </label>
                            
                         {%- endfor -%}
@@ -778,7 +780,25 @@
               </div>
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-                      </div>
+            </div>
+
+              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                <div class="product__tax caption rte">
+                  {%- if shop.taxes_included -%}
+                    {{ 'products.product.include_taxes' | t }}
+                  {%- endif -%}
+                  {%- if shop.shipping_policy.body != blank -%}
+                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+              <div {{ block.shopify_attributes }}>
+                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                  {{ form | payment_terms }}
+                {%- endform -%}
+              </div>
             {%- when 'rating' -%}
               {% comment %}
               {%- if product.metafields.reviews.rating.value != blank -%}
@@ -1338,7 +1358,7 @@
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1,
-      "settings":[
+      "settings": [
         {
           "type": "checkbox",
           "id": "sale_price_enable",

@@ -322,8 +322,6 @@ $(document).ready(function() {
   });
 });
 
-$('body.product_detail .grid__item .accordion:first-child details').attr('open','true');
-
 // account page delete functionlity added
 $(".info button").click(function(){
    var customer_data = $(this).attr("data-target");

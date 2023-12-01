@@ -172,7 +172,6 @@
 variant-radios,
 variant-selects {
   display: block;
-  padding: 15px 0 10px 0;
 }
 
 .product-form__input--dropdown {
@@ -304,9 +303,9 @@ fieldset.product-form__input .form__label {
 
 /* Product info */
 
-.product__info-container > * + * {
+/* .product__info-container > * + * {
   margin: 1.5rem 0;
-}
+} */
 
 .product__info-container iframe {
   max-width: 100%;
@@ -355,10 +354,6 @@ a.product__text {
 
 .product__accordion .accordion__content {
   padding: 0 1rem;
-}
-
-.product .price .badge {
-  margin-bottom: 0.5rem;
 }
 
 .product .price__container {
@@ -410,10 +405,6 @@ a.product__text {
 .product--no-media .product__media-wrapper,
 .product--no-media .product__info-wrapper {
   padding: 0;
-}
-
-.product__tax {
-  margin-top: -1.4rem;
 }
 
 .product--no-media noscript .product-form__input,
