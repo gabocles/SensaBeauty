@@ -36,27 +36,41 @@
   {%- if product.price_varies == false or product.compare_at_price_varies %} price--no-compare{% endif -%}
   {%- if show_badges %} price--show-badge{% endif -%}">
   <div class="price__container">
+    {%- if show_badges -%}
+      {%- if compare_at_price > price %}
+        <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+          {{ compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}% OFF
+        </span>
+      {% endif %}
+      {% comment %} <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+        {{ 'products.product.sold_out' | t }}
+      </span> {% endcomment %}
+    {%- endif -%}
     
+    {% comment %}
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {% comment %}{{ money_price }}{% endcomment %}
+        {{ money_price }}
         
         {% if product.price_varies and template == 'collection' or product.price_varies and template == 'search' %}
-          {{ product.price_min | money }} {% comment %} - {{ product.price_max | money }}{% endcomment %}
+          {{ product.price_min | money }} - {{ product.price_max | money }}
         {% else %}  
           {{ money_price  }}
         {% endif %}
       </span>
     </div>
-    
-    <div class="price__sale">
+    {% endcomment %}
+
+    <div class="price__sale {% if template.name == 'collection' %}price__sale-collection{% endif %}">
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-        <span>
+        {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span> {% endcomment %}
+        <span class="price-retail">
+          {% if template != 'collection' %}
+            Retail
+          {% endif %}
           <s class="price-item price-item--regular">
             {% assign lowestPrice = product.variants | sort: 'price' | first %}
-            
             {% if template == 'collection' %}
               {% if settings.currency_code_enabled %}                
                 {% if lowestPrice.compare_at_price > lowestPrice.price %}
@@ -89,6 +103,7 @@
         {% endif %}
       </span>
     </div>
+
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
       <span class="price-item price-item--last">
@@ -104,17 +119,7 @@
       </span>
     </small>
   </div>
-  {%- if show_badges -%}
-    {%- if compare_at_price > price %}
-      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {{ 'products.product.on_sale' | t }}
-      </span>
-    {% endif %}
-    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-      {{ 'products.product.sold_out' | t }}
-    </span>
-   
-  {%- endif -%}
+
 </div>
 
 
@@ -192,7 +197,7 @@
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
+      {{ compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}% OFF
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+
 *{
   letter-spacing: normal;
 }
@@ -45,7 +46,7 @@ header.header .header__heading .header__heading-link{
 }
 header.header .header__icon--cart .cart-count-bubble span{
   color: #000;
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -1302,7 +1303,7 @@ body.index-template .featured-collection .product-grid .card:not(.ratio) > .card
 }
 
 .benefit-section .text-box .description p{
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -2338,10 +2339,9 @@ body.account .logout_button svg{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 25px;
-  text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 .shopify-section.product-template .product__info-wrapper .product__info-container .product__title{
   margin-bottom: 13px;
@@ -2378,22 +2378,29 @@ body.account .logout_button svg{
   justify-content: flex-start;
 }
 
-.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label, .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label a{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+/* all variant buttons */
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label,
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label a {
+  border: 1px solid #d2d2d2;
   color: #000;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 5px 12px;
-  letter-spacing: normal;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   overflow: hidden;
+  border-radius: 4px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0.5rem 0.5rem 0.6rem 0.3rem;
+  text-align: left;
 }
-.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label a{
+
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label img {
+  margin-right: 10px;
+}
+
+
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label a {
   border: none;
   padding: 0px;
   text-decoration: none;
@@ -2408,46 +2415,79 @@ body.account .logout_button svg{
   position: relative;
   pointer-events: none;
   cursor: not-allowed;
-  opacity: 0.5;
   order: 1;
 }
+
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label.soldout img,
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label.soldout a {
+  opacity: .4;
+}
+
 .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label.soldout::after{
   content: "";
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   height: 1px;
   background: #000;
   display: inline-block;
   transform: skewY(24deg);
   top: 50%;
+  opacity: .4;
 }
 .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container{
   margin-bottom: 0px;
 }
+
+.price--on-sale .price__sale {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
 .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__regular .price-item--regular, .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__sale .price-item--sale{
-  font-family: 'Montserrat';
+  font-family: unset;
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 44px;
+  font-size: 30px;
   text-align: center;
-  color: #A05D2B;
-  padding-top: 15px;
+  color: #000;
+  margin-bottom: 1rem;
 }
 .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__sale .price-item--sale{
   padding-top: 0px;
 }
 
+.price__sale-collection {
+  display: flex !important;
+  align-items: center;
+}
+
+.price__sale-collection .price-retail {
+  margin-bottom: 0;
+}
+.price__sale-collection .price--on-sale .price-item--regular {
+  color: #8D8D8D; 
+}
+
+.product-card-wrapper .price .price__container .price__sale-collection {
+  color: #000;
+}
+
+.price-retail {
+  color: #8D8D8D;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
 .shopify-section.product-template .product__info-wrapper .product__info-container .price--on-sale .price-item--regular{
+  color: #8D8D8D;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
-  opacity: 0.8;
-  float: left;
-  margin-top: 7px;
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 .shopify-section.product-template .product__info-wrapper .product__info-container .price{
@@ -2458,16 +2498,20 @@ body.account .logout_button svg{
 .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio] + label::after, .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio] + label::before{
   display: none;
 }
+
+/* active variant button */
 .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label{
   background: #fff;
-  color: #000;
   border: 1px solid #000;
   position: relative;
-}
-.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label::after, .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label::before{
-  display: none;
+  
 }
 
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label::after,
+.shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label::before{
+  display: none;
+}
+/* 
 .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label::after{
   display: block !important;
   content: "";
@@ -2478,14 +2522,12 @@ body.account .logout_button svg{
   height: calc(100% + 2px);
   border: 2px solid #000;
   border-radius: 10px;
-}
+} */
 
 .shopify-section.product-template .product__info-wrapper .product-form{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 14px;
-  margin-bottom: 20px;
 }
 .shopify-section.product-template .product__info-wrapper .product-form .product-form__input{
   flex: 0 0 auto;
@@ -2566,10 +2608,15 @@ body.account .logout_button svg{
   margin: 0 7px;
 }
 .shopify-section.product-template .product__info-wrapper .content p{
-  font-size: 15px;
+  color:#000;
+  font-size: 1.5rem;
   margin: 0;
-  color:#000000;
+
+  @media (max-width: 650px) {
+    font-size: 1.3rem;
+  }
 }
+
 .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient{
   margin-top: 0px;
 }
@@ -2633,22 +2680,15 @@ body.account .logout_button svg{
 .shopify-section.video-section .video-box deferred-media .deferred-media__poster-button{
   background: #EBBFB9 !important;
 }
-.collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient details .accordion__content{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 25px;
-  color: #000000;
-}
+
 .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient details .accordion__content span{
   font-family: 'Tenor Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 16px;
+  line-height: 2;
   color: #A05D2B;
-  margin-right: 12px;
+  margin-right: 5px;
 }
 /* ====================== Blog page start ============================= */
 .page-width.blog-wrapper{
@@ -3170,29 +3210,26 @@ body.account .logout_button svg{
   font-weight: 500;
   font-size: 15px;
   line-height: 19px;
-  text-align: center;
+  text-align: left;
   color: #000;
   margin-top: 5px;
 }
 .product-card-wrapper .caption-with-letter-spacing{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-  text-align: center;
   color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
   opacity: 1;
+  text-transform: uppercase;
 }
 .product-card-wrapper .price .price__container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
   color: #a05d2b;
   margin-top: 10px;
   font-size: 15px;
@@ -3966,12 +4003,8 @@ body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accord
 @media (max-width: 989px){
 
   .shopify-section.product-template .product__info-wrapper .product__info-container .product__text.caption-with-letter-spacing a{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 17px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1;
     display: table;
   }
   
@@ -4864,6 +4897,7 @@ body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accord
    }
    .shopify-section.product-template .product__info-wrapper .product__tax.caption+div {
      margin: 0 !important;
+     order: 8;
    }
 }
 @media (max-width: 650px){
@@ -4935,8 +4969,8 @@ body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accord
   }
   .shopify-section.product-template .product__info-wrapper .product__info-container .product__title h1{
     font-size: 20px;
-    line-height: 20px;
-    margin-top: 15px;
+    line-height: 1;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
   .shopify-section.product-template .product__info-wrapper .product-form{
@@ -4978,7 +5012,7 @@ body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accord
   }
   .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient details .accordion__content span{
     font-size: 16px;
-    line-height: 42px;
+    line-height: 1;
   }
   .shopify-section.product-recommendation .product-recommendations__heading{
     padding-left: 20px;
@@ -4986,8 +5020,8 @@ body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accord
     text-align: center;
   }
   .video-section+.section .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary .accordion__title{
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 2;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -5644,19 +5678,19 @@ header.header #Details-menu-drawer-container .header__icon svg{
     max-width: 40%;
     width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2);
   }
-  .product-template .product.grid .product__info-wrapper{
+  .product-template .product.grid .product__info-wrapper {
     max-width: 60%;
     width: calc(60% - var(--grid-desktop-horizontal-spacing) / 2);
   }
-  .shopify-section.product-template .product__info-wrapper .product__info-container .product__text.caption-with-letter-spacing{
-    margin-bottom: 10px;
+  .shopify-section.product-template .product__info-wrapper .product__info-container .product__text.caption-with-letter-spacing {
+    color: #000;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 7px;
     text-transform: uppercase;
-    color: #000000;
   }
   .shopify-section.product-template .product__info-wrapper .product__info-container .product__title{
     margin-bottom: 10px;
@@ -5848,47 +5882,51 @@ header.header #Details-menu-drawer-container .header__icon svg{
   }
 }
 @media (max-width: 749px){ 
- .shopify-section.product-recommendation .product-recommendations__heading{
-    font-size: 36px;
+  .shopify-section.product-recommendation .product-recommendations__heading {
+    font-size: 24px;
     line-height: 36px;
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 15px;
   }
- .shopify-section.product-template+.shopify-section.section .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary{
+
+  .shopify-section.product-template+.shopify-section.section .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
   body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary .collapsible-arrow, .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary .collapsible-arrow{
     top: 27px;
   }
-  body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary .collapsible-arrow{
+
+  body.faqs .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary .collapsible-arrow {
     top: 35px;
   }
 }
-.product-media-modal[open]{
+
+.product-media-modal[open] {
   z-index: 11111 !important;
 }
-header .header__heading-link{
+header .header__heading-link {
   padding: 0px !important;
 }
-.collection-template #main-collection-filters facet-filters-form .facets__summary+.parent-display .facets-wrap input[type="text"]{
+.collection-template #main-collection-filters facet-filters-form .facets__summary + .parent-display .facets-wrap input[type="text"] {
   font-size: 14px;
   line-height: 18px;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
 }
-.collection-template #main-collection-filters facet-filters-form .facets__summary+.parent-display .facets-wrap input[type="text"]:focus{
+.collection-template #main-collection-filters facet-filters-form .facets__summary + .parent-display .facets-wrap input[type="text"]:focus {
   box-shadow: 0 0 0 1px rgba(18,18,18,0.55) !important;
 }
 .product-media-modal__dialog .global-media-settings--no-shadow {
   max-height: 600px !important;
   object-fit: contain;
 }
-.banner.banner--adapt{
-    max-height: 320px !important;
-  }
+.banner.banner--adapt {
+  max-height: 320px !important;
+}
 .index-template .banner .banner__media.media,
 .about .banner .banner__media.media{
   max-width: 1280px;
@@ -5903,17 +5941,20 @@ header .header__heading-link{
 .multicolumn .multicolumn-card .multicolumn-card__info a.link.mobile_text{
   display: none;
 }
+
 @media (min-width: 1024px) {
   .collapsible-content-wrapper-narrow .collapsible-content__grid .accordion.gradient summary .accordion__title {
-    font-size: 24px !important;
-    line-height: 44px !important;
+    font-size: 20px !important;
+    line-height: 2 !important;
   }
 }
+
 @media (min-width: 750px){
   .banner__content.banner__content--middle-center{
     padding: 0 5rem;
   }
 }
+
 @media (min-width: 990px) {
   header.header .mega-menu .mega-dropdown .dropdown-item {
     opacity: 0;
@@ -5932,35 +5973,37 @@ header .header__heading-link{
     column-gap: 50px;
   }
 }
+
 @media (max-width: 767px){
-  .category .category-row{
+  .category .category-row {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
     padding-bottom: 15px;
   }
-  header.header .wishlist_icon a.navigation__link{
+  header.header .wishlist_icon a.navigation__link {
     width: 30px;
     height: 30px;
     margin-left: 5px;
     margin-right: 5px;
   }
-  header.header .header__icon--cart, header.header .header__icon--account{
+  header.header .header__icon--cart, header.header .header__icon--account {
     width: 30px;
     height: 30px;
   }
-  .multicolumn .multicolumn-card .multicolumn-card__info h3 a{
+  .multicolumn .multicolumn-card .multicolumn-card__info h3 a {
     text-transform: capitalize;
   }
-  .multicolumn .multicolumn-card .multicolumn-card__info .rte{
+  .multicolumn .multicolumn-card .multicolumn-card__info .rte {
     display: none;
   }
   .shopify-section.category-section + .shopify-section.section + .shopify-section.section{
     display: none;
   }
 }
+
 .custom_tags_desktop .clearfix_filters {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -5977,11 +6020,11 @@ header .header__heading-link{
   padding-left: 10px;
   margin-top: -2px;
 }
-.custom_tags_desktop input[type="checkbox"]{
+.custom_tags_desktop input[type="checkbox"] {
   border: 1px solid #CACACA;
   border-radius: 2px;
 }
-.collection-template .facets-wrap.parent-wrap.facets-wrap-vertical #BrandSearch{
+.collection-template .facets-wrap.parent-wrap.facets-wrap-vertical #BrandSearch {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgb(var(--color-background));
@@ -6000,17 +6043,17 @@ header .header__heading-link{
   padding: 0 20px;
   margin-bottom: 10px;
 }
-.collection-template .facets__display-vertical:has(div[class="custom_tags_desktop"]) .facets__header-vertical{
+.collection-template .facets__display-vertical:has(div[class="custom_tags_desktop"]) .facets__header-vertical {
   padding: 0px;
 }
-.template-search .facets-vertical-sort{
+.template-search .facets-vertical-sort {
   margin-top: 40px;
   margin-bottom: 40px;
   padding-left: 0px;
   padding-right: 0px;
   display: table;
   width: 100%;
-    display: flex;
+  display: flex;
 }
 .template-search .facets-vertical-sort .product-count__text{
   font-family: 'Montserrat';
@@ -6581,10 +6624,6 @@ body.login .login-container a.create-account .icon{
   } 
 }
 @media(max-width: 400px){
-  body.product_detail .product .badge.price__badge-sale{
-    display: block;
-    max-width: 60px;
-  }
   body.index-template .card-information{
     margin-top: 0px !important;
   }
@@ -6845,14 +6884,13 @@ body.product_detail .badge {
   line-height: 23px;
 }
 .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__regular .price-item--regular, .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__sale .price-item--sale{
-  font-size: 26px;
-  line-height: 40px;
+  line-height: 1;
 }
 
 .card.card--standard .tag{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   column-gap: 10px;
 }
 
@@ -6901,11 +6939,6 @@ body.product_detail .badge {
   .product--thumbnail_slider .product-slider .slider.slider-nav.thumb-image{
     display: none;
   }
-
-  .shopify-section.product-template .product__info-wrapper .product__info-container .price--on-sale .price-item--regular{
-    font-size: 20px;
-    margin-top: 0px;
-  }
   .product-template .product__info-wrapper .product__info-container > .no-js-hidden{
     width: 100%;
   }
@@ -6932,20 +6965,8 @@ body.product_detail .badge {
   
   .product-template .product__info-wrapper .product__info-container .price--show-badge:has(.price__badge-sale){
     position: relative;
-    padding-top: 35px;
+    padding-top: 0;
     align-items: center;
-  }
-
-  .product-template .product__info-wrapper .product__info-container .price--show-badge:has(.price__badge-sale) .price__container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .product-template .product__info-wrapper .product__info-container .price--show-badge:has(.price__badge-sale) .price__container .price__sale{
-    display: flex;
-    align-items: center;
-    padding-top: 8px;
   }
 
   .product-template .product__info-wrapper .product__info-container .price--show-badge:has(.price__badge-sale) .price--on-sale .price-item--regular{
@@ -6961,12 +6982,6 @@ body.product_detail .badge {
   .shopify-section.product-template .product__info-wrapper .product__info-container .product__title h1{
     margin-bottom: 0px;
   }
-  .product-template .product__info-wrapper .product__info-container .price--show-badge .badge{
-    position: absolute !important;
-    top: 0;
-    left: 0;
-  }
- 
 
   .category .image-box img{
     max-width: 60%;
@@ -6986,12 +7001,13 @@ body.product_detail .badge {
   .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios{
     margin-top: 10px;
   }
-  .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label, .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label a{
-    padding: 15px 9px;
-    border-radius: 0px;
-    margin-bottom: 10px;
-    font-size: 14px;
+  .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label,
+  .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label a{
     overflow: hidden;
+    padding: 6px 5px;
+    font-size: 12px;
+    width: 110px;
+    line-height: 1;
   }
   .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__regular .price-item--regular, .shopify-section.product-template .product__info-wrapper .product__info-container .price .price__container .price__sale .price-item--sale{
     font-size: 22px;
@@ -7091,7 +7107,6 @@ body.product_detail .badge {
   display: block;
 }
 
-
 .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type=radio]:checked + label.soldout::after {
     height: 1px;
     border: none;
@@ -7107,7 +7122,7 @@ body.product_detail .badge {
 
 @media (min-width: 650px){
   .shopify-section.product-template .product__info-wrapper .product__info-container variant-radios .product-form__input input[type="radio"] + label.soldout::after{
-    transform: skewY(12deg);
+    transform: skewY(20deg);
   }
 }
 
@@ -7123,18 +7138,18 @@ body.product_detail .badge {
 }
 
 .shopify-section.collection-template #ProductGridContainer .collection .load-more .load-more_btn{
-      font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    padding: 15px 30px;
-    opacity: 1;
-    border: 2px solid rgb(0 0 0 / 100%);
-    position: relative;
-    z-index: 1;
-    transition: all 0.25s ease-in-out;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding: 15px 30px;
+  opacity: 1;
+  border: 2px solid rgb(0 0 0 / 100%);
+  position: relative;
+  z-index: 1;
+  transition: all 0.25s ease-in-out;
   background: #D8AF8D;
   display: table;
   margin: 30px auto 0;
@@ -7193,9 +7208,111 @@ section.product-recommendation {
     min-height: 640px;
   }
 }
-.product .price .badge {
-  margin-bottom: 0px !important;
-  font-size: 11px;
-  width: 60px;
-  padding: 0.35rem 1rem 0.35rem;
+
+.variant-text-link {}
+.variant-text-link span {
+  font-size: 1.2rem;
+}
+
+
+/* Custom Tabs on PDP */
+ul.custom-tabs {
+  list-style-type: none;
+  max-width: 100%;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0;
+}
+.custom-tabs .tab-list {
+  background-color: #efefef;
+  display: inline-block;
+}
+.custom__tab-content {
+  display:none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+.custom__tab-content span {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  color: #A05D2B;
+  margin-right: 12px;
+}
+
+.custom__tab-content.active {
+  display:block;
+}
+.tab-list h6.custom-tab {
+  display:inline-block !important;
+  padding:10px 15px !important;
+  cursor: pointer !important;
+  margin: 0px !important;
+}
+.active-always {
+  display: block !important;
+}
+.tab-list:first-child {
+  background-color: #dfdfdf;
+}
+.tab-list h6.custom-tab.active {
+  color:grey !important;
+  border-bottom:1px solid red !important;
+  background-color: #dfdfdf;
+}
+
+@media only screen and (max-width: 576px) {
+  ul.custom-tabs{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .custom-tabs .tab-list .custom-tab {
+    margin: 0px !important;
+    width: 100%;
+    padding: 10px 15px !important;
+    border-bottom: none !important;
+  }
+  .tab-list h6.custom-tab {
+    padding: 0px !important;
+    margin: 10px 0px !important;
+  }
+  .custom__tab-content.active {
+    padding: 0 15px;
+  }
+}
+
+.card__badge .badge {
+  font-size: 12px;
+  background-color: #DFE8F4;
+  font-family: unset;
+  color: #000;
+  padding: 2px 5px;
+  width: fit-content;
+  top: -10px;
+
+  @media (max-width: 650px) {
+    font-size: 11px;
+    padding: 2px 2px;
+  }
+}
+
+.price .price__badge-sale {
+  font-size: 12px;
+  background-color: #DFE8F4;
+  font-family: unset;
+  color: #000;
+  padding: 2px 5px;
+  margin-top: 0 !important;
+  margin-bottom: 1.8rem;
+  width: fit-content;
+
+  @media (max-width: 650px) {
+    margin-bottom: 1rem;
+  }
 }

@@ -775,3 +775,15 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+let getVariantText = document.querySelectorAll(".variant-text-link");
+console.log(getVariantText);
+
+getVariantText.forEach(item => {
+  console.log(item.innerText);
+
+  if (item.innerText.includes("Tester")) {
+    item.innerHTML = '<span>' + item.innerHTML + '</span>';
+  }
+});

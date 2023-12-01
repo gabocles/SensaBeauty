@@ -68,8 +68,6 @@
        </div>
         
         {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
-        
-        
       </aside>
     {%- endif -%}
 
@@ -77,13 +75,12 @@
     {% if collection.title  == 'Products' or collection.title == 'Products' or filter.label == 'Products' %}
      
     {% else %}  
-    {% if section.settings.show_collection_image and collection.image %}
-      <div class="collection-banner desktop-only">
-        <img src="{{ collection.image | img_url:'master' }}" alt="{{ collection.title }}">          
-      </div>
-    {% endif %}  
-      
-    {% endif %} 
+      {% if section.settings.show_collection_image and collection.image %}
+        <div class="collection-banner desktop-only">
+          <img src="{{ collection.image | img_url:'master' }}" alt="{{ collection.title }}">          
+        </div>
+      {% endif %}
+    {% endif %}
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
@@ -181,65 +178,59 @@
               {%- endfor -%}
             </ul>
 
-
            {% if section.settings.infinite_scroll == 'pagination' or section.settings.infinite_scroll == 'infinite' %}
               {% if section.settings.infinite_scroll == 'pagination' %} 
                 {%- if paginate.pages > 1 -%}
                   {% render 'pagination', paginate: paginate, anchor: '' %}
                 {%- endif -%}
               {% endif %}
-          
 
-            {% for part in (1..paginate.pages) %}
-              {% if forloop.index == 1 %}
-                {% if paginate.next.is_link %}
-                  {%- assign next_page = current_page | plus: 1 -%}
-                  {%- assign page_query_param_old = 'page=' | append: next_page -%}
-                  {%- assign page_url_template = paginate.next.url -%}
-                {% elsif paginate.previous.is_link %}
-                  {%- assign previous_page = current_page | minus: 1 -%}
-                  {%- assign page_query_param_old = 'page=' | append: previous_page -%}
-                  {%- assign page_url_template = paginate.previous.url -%}
-                {% else %}
-                  {%- assign page_query_param_old = 'page=page' -%}
-                  {%- assign page_url_template = collection.url | append: '?page=page' -%}
+              {% for part in (1..paginate.pages) %}
+                {% if forloop.index == 1 %}
+                  {% if paginate.next.is_link %}
+                    {%- assign next_page = current_page | plus: 1 -%}
+                    {%- assign page_query_param_old = 'page=' | append: next_page -%}
+                    {%- assign page_url_template = paginate.next.url -%}
+                  {% elsif paginate.previous.is_link %}
+                    {%- assign previous_page = current_page | minus: 1 -%}
+                    {%- assign page_query_param_old = 'page=' | append: previous_page -%}
+                    {%- assign page_url_template = paginate.previous.url -%}
+                  {% else %}
+                    {%- assign page_query_param_old = 'page=page' -%}
+                    {%- assign page_url_template = collection.url | append: '?page=page' -%}
+                  {% endif %}
                 {% endif %}
+                {%- assign page_query_param_new = 'page=' | append: forloop.index -%}
+                {%- assign page_url = page_url_template | replace: page_query_param_old, page_query_param_new -%}
+              
+                <li class="page {% if paginate.current_page == part %}current{% endif %}" style="display: none;">
+                  <a class="page__number" href="{{ page_url }}" aria-label="Page {{ forloop.index }}">{{ forloop.index }}</a>
+                </li>
+              {% endfor %}
+            
+              {% if  section.settings.infinite_scroll == 'infinite' %}  
+              <div class="infinite_scroll" data-currant-link="{{ paginate.next.url }}{{ anchor }}">  
+              <input type="hidden" value="{{ paginate.next.url }}" data-next-link>
+              <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
+              <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
+              <input type="hidden" value="{{ collection.url }}" data-coll-url>
+                <div class="load-more_wrap">
+                  <button class="btn js-load-more button button--secondary" {%- if paginate.pages <= 1 -%}disabled="disabled"{% endif %}>
+                    {%- if paginate.pages <= 1 -%}
+                    <span load-more-text>Products Finished</span>
+                    {% else %}
+                    <span load-more-text>Load more</span>
+                      {% endif %}
+                    {% comment %}
+                    <span class="hide" loader>
+                      <img src="{{ 'giphy.gif' | asset_url }}"/>
+                    </span>
+                    {% endcomment %}
+                  </button>
+                </div>
+              </div>
               {% endif %}
-              {%- assign page_query_param_new = 'page=' | append: forloop.index -%}
-              {%- assign page_url = page_url_template | replace: page_query_param_old, page_query_param_new -%}
-            
-              <li class="page {% if paginate.current_page == part %}current{% endif %}" style="display: none;">
-                <a class="page__number" href="{{ page_url }}" aria-label="Page {{ forloop.index }}">{{ forloop.index }}</a>
-              </li>
-            {% endfor %}
-             
-           
-            
-            {% if  section.settings.infinite_scroll == 'infinite' %}  
-            <div class="infinite_scroll" data-currant-link="{{ paginate.next.url }}{{ anchor }}">  
-             <input type="hidden" value="{{ paginate.next.url }}" data-next-link>
-             <input type="hidden" value="{{ paginate.pages }}" data-all-pages>
-             <input type="hidden" value="{{ paginate.current_page }}" data-this-page>
-             <input type="hidden" value="{{ collection.url }}" data-coll-url>
-               <div class="load-more_wrap">
-                 <button class="btn js-load-more button button--secondary" {%- if paginate.pages <= 1 -%}disabled="disabled"{% endif %}>
-                   {%- if paginate.pages <= 1 -%}
-                   <span load-more-text>Products Finished</span>
-                   {% else %}
-                   <span load-more-text>Load more</span>
-                    {% endif %}
-                   {% comment %}
-                   <span class="hide" loader>
-                     <img src="{{ 'giphy.gif' | asset_url }}"/>
-                   </span>
-                   {% endcomment %}
-                 </button>
-               </div>
-            </div>
-            
-            {% endif %}
-            
-           
+
             {% endif %}
              
           </div>
@@ -254,16 +245,13 @@ button.btn.js-load-more.button.button--secondary[disabled="disabled"] {
     display: none;
 }
 .load-more_wrap{
- margin-top: 60px; 
- text-align: center;
+  margin-top: 60px; 
+  text-align: center;
 }
 .load-more_wrap img{
- max-width: 25px;
+  max-width: 25px;
 }
-
 </style>
-
-
 
 {% schema %}
 {
