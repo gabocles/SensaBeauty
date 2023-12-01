@@ -35,6 +35,7 @@
   {%- if compare_at_price > price %} price--on-sale {% endif -%}
   {%- if product.price_varies == false or product.compare_at_price_varies %} price--no-compare{% endif -%}
   {%- if show_badges %} price--show-badge{% endif -%}">
+
   <div class="price__container">
     {%- if show_badges -%}
       {%- if compare_at_price > price %}
@@ -46,24 +47,25 @@
         {{ 'products.product.sold_out' | t }}
       </span> {% endcomment %}
     {%- endif -%}
-    
+
     {% comment %}
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {{ money_price }}
+        ACASARASA {{ money_price }}
         
         {% if product.price_varies and template == 'collection' or product.price_varies and template == 'search' %}
-          {{ product.price_min | money }} - {{ product.price_max | money }}
+          ACA1 {{ product.price_min | money }} - {{ product.price_max | money }}
         {% else %}  
-          {{ money_price  }}
+          ACA2 {{ money_price }}
         {% endif %}
+        
       </span>
     </div>
     {% endcomment %}
 
     <div class="price__sale {% if template.name == 'collection' %}price__sale-collection{% endif %}">
-      {%- unless product.price_varies == false and product.compare_at_price_varies %}
+      {%- unless product.price_varies == false and product.compare_at_price_varies -%}
         {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span> {% endcomment %}
         <span class="price-retail">
           {% if template != 'collection' %}

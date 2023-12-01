@@ -6612,7 +6612,7 @@ body.login .login-container a.create-account .icon{
   }
 }
 .product-grid-container .collection .product-grid{
-  row-gap: 13px !important;
+  row-gap: 30px !important;
 }
 
 @media (max-width:1023px){
