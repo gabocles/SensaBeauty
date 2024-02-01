@@ -159,7 +159,7 @@
         "heading": "",
         "content": "<p><\/p><p><\/p>",
         "button_title": "",
-        "button_url": "shopify:\/\/collections\/sensas-top-staff-picks",
+        "button_url": "shopify:\/\/collections\/valentines-day-gift-perfume-fragrance-cologne",
         "text_color": "#000000"
       }
     },
@@ -314,12 +314,12 @@
       "disabled": true,
       "settings": {
         "title": "Sensa's Staff Selection",
-        "collction_link": "shopify:\/\/collections\/sensas-top-staff-picks",
+        "collction_link": "shopify:\/\/collections\/valentines-day-gift-perfume-fragrance-cologne",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "sensas-top-staff-picks",
+        "collection": "valentines-day-gift-perfume-fragrance-cologne",
         "products_to_show": 15,
         "columns_desktop": 4,
         "full_width": false,
